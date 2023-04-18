@@ -1,0 +1,592 @@
+{% load static %}
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+
+<!-- Mirrored from html.modernwebtemplates.com/psychologist/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 20 Dec 2021 17:09:08 GMT -->
+<head>
+	<title>MentaL-Health Break The Myth</title>
+	<meta charset="utf-8">
+	<!--[if IE]>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<![endif]-->
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+	<link  rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+	<link  rel="stylesheet" href="{% static 'css/animations.css' %}">
+	<link    rel="stylesheet" href="{% static 'css/fonts.css' %}">
+	<link  rel="stylesheet" href="{% static 'css/main.css' %}" class="color-switcher-link">
+	<script src="{% static 'js/vendor/modernizr-2.6.2.min.js' %}"></script>
+
+
+	<!--[if lt IE 9]>
+		<script src="js/vendor/html5shiv.min.js"></script>
+		<script src="js/vendor/respond.min.js"></script>
+		<script src="js/vendor/jquery-1.12.4.min.js"></script>
+	<![endif]-->
+	
+</head>
+<body>
+	<!--[if lt IE 9]>
+		<div class="bg-danger text-center">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/" class="highlight">upgrade your browser</a> to improve your experience.</div>
+	<![endif]-->
+
+	<!--<div class="preloader">
+		<div class="preloader_image"></div>
+	</div> -->
+
+	<!-- search modal -->
+	<div class="modal" tabindex="-1" role="dialog" aria-labelledby="search_modal" id="search_modal">
+		<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			<span aria-hidden="true">
+				<i class="rt-icon2-cross2"></i>
+			</span>
+		</button>
+		<div class="widget widget_search">
+			<form method="get" class="searchform search-form form-inline" action="https://html.modernwebtemplates.com/psychologist/">
+				<div class="form-group">
+					<input type="text" value="" name="search" class="form-control" placeholder="Search keyword" id="modal-search-input">
+				</div>
+				<button type="submit" class="theme_button">Search</button>
+			</form>
+		</div>
+	</div>
+
+	<!-- Unyson messages modal -->
+	<div class="modal fade" tabindex="-1" role="dialog" id="messages_modal">
+		<div class="fw-messages-wrap ls with_padding">
+			<!-- Uncomment this UL with LI to show messages in modal popup to your user: -->
+			<!--
+		<ul class="list-unstyled">
+			<li>Message To User</li>
+		</ul>
+		-->
+
+		</div>
+	</div>
+	<!-- eof .modal -->
+
+	<!-- wrappers for visual page editor and boxed version of template -->
+	<div id="canvas">
+		<div id="box_wrapper">
+
+	{% include 'user/sidebaruserpanel.html' %}
+            <section class="page_breadcrumbs ds background_cover section_padding_50">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-12 text-center">
+                            <h2>Self-AssesmentTest</h2> 
+            
+                            <ol class="breadcrumb divided_content wide_divider">
+                                <li>
+                                    <a href="index.html">
+                                        Others
+                                    </a>
+                                </li>
+                                
+                                <li class="active">Self-Assesment Test</li>
+                                
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="ls section_padding_top_100 section_padding_bottom_100">
+                <div class="container">
+					<div class="col-sm-12">
+                               <i>Over the last 2 weeks, how often have you been bothered by any of the following problems? Please note, all fields are required.</i>
+                                <br>
+                                <br>
+                                
+                                </br>
+                                <i>Please note: Online screening tools are not diagnostic instruments. You are encouraged to share your results with a physician or healthcare provider. Mental Health Break The Myth , sponsors, partners, and advertisers disclaim any liability, loss, or risk incurred as a consequence, directly or indirectly, from the use  of these screening test.</i>
+                                </div>
+						
+							<div class="row">
+								
+				            <div class="col-sm-12">
+                                
+							
+							<article class="post side-item content-padding with_shadow">
+								<div class="row">
+									<form method="post" action="/user/selfassessment1_test/inserted"   onsubmit=" formvalidate()">
+                                        {% csrf_token %}
+    
+                            <div class="col-sm-12">
+                                <div class="form-group">
+                                   Q-1) Little interest or pleasure in doing things?
+                                   <input type="hidden" name="qid1" value="1101" >
+                                   <span class="required">*</span>
+								   <div class="abc">  
+								</div>
+                                     <div class="radio">
+                                         <label>
+                                             
+                                <input type="radio"  name="q1" value="0" style="height:50px ; width: 20px;margin-top: -10px;" onclick="radioValidation();" >  &nbsp;&nbsp;&nbsp;Not at all <br>
+                                <input type="radio"  name="q1" value="1" style="height:50px ; width: 20px;margin-top: -10px;"  onclick="radioValidation();">  &nbsp;&nbsp;&nbsp; Several days <br>
+                                <input type="radio"  name="q1" value="2" style="height:50px ; width: 20px;margin-top: -10px;" onclick="radioValidation();">  &nbsp;&nbsp;&nbsp; More than half of the days <br> 
+                                <input type="radio"  name="q1" value="3" style="height:50px ; width: 20px;margin-top: -10px;" onclick="radioValidation();">  &nbsp;&nbsp;&nbsp; Nearly every day <br> 
+                               
+                                         </label>
+                                         </div>
+								</div>		 
+                                     
+                                         
+                                 </div> 
+                                 
+                             </div>
+							</article>
+							<article class="post side-item content-padding with_shadow">
+								<div class="row">
+                    
+                            <!-- <div class="col-sm-12"> -->
+                                <div class="form-group">
+                                   Q-2) Feeling down, depressed, or hopeless?
+                                   <input type="hidden" name="qid2" value="1102">
+                                   <span class="required">*</span>
+
+                                     <div class="radio">
+                                         <label>
+                                             
+                                <input type="radio"  name="q2" value="0" style="height:50px ; width: 20px;margin-top: -10px; " onclick="radioValidation();" >  &nbsp;&nbsp;&nbsp;Not at all <br>
+                                <input type="radio"  name="q2" value="1" style="height:50px ; width: 20px;margin-top: -10px;" onclick="radioValidation();">  &nbsp;&nbsp;&nbsp; Several days <br>
+                                <input type="radio"  name="q2" value="2" style="height:50px ; width: 20px;margin-top: -10px;" onclick="radioValidation();">  &nbsp;&nbsp;&nbsp; More than half of the days <br> 
+                                <input type="radio"  name="q2" value="3" style="height:50px ; width: 20px;margin-top: -10px;" onclick="radioValidation();">  &nbsp;&nbsp;&nbsp; Nearly every day <br> 
+                               
+                                         </label>
+                                        <!--- </div> -->
+                                    
+                                     
+										</div>      
+                                 </div> 
+                                 
+                             </div>
+							</article>
+							
+                            <article class="post side-item content-padding with_shadow">
+								<div class="row">
+                    
+                             <!-- <div class="col-sm-12"> -->
+                                <div class="form-group">
+                                   Q-3) Trouble falling or staying asleep, or sleeping too much?
+                                   <input type="hidden" name="qid3" value="1103">
+                                   <span class="required">*</span>
+
+                                     <div class="radio">
+                                         <label>
+                                             
+                                <input type="radio" class="form-control " name="q3" value="0" style="height:50px ; width: 20px;margin-top: -10px;" >  &nbsp;&nbsp;&nbsp;Not at all <br>
+                                <input type="radio" class="form-control " name="q3" value="1" style="height:50px ; width: 20px;margin-top: -10px;" >  &nbsp;&nbsp;&nbsp; Several days <br>
+                                <input type="radio" class="form-control " name="q3" value="2" style="height:50px ; width: 20px;margin-top: -10px;">  &nbsp;&nbsp;&nbsp; More than half of the days<br> 
+                                <input type="radio" class="form-control " name="q3" value="3" style="height:50px ; width: 20px;margin-top: -10px;">  &nbsp;&nbsp;&nbsp; Nearly every day <br> 
+                               
+                                         </label>
+                                    <!---   </div> -->
+                                    
+                                     
+										</div>        
+                                 </div> 
+                                 
+                             </div>
+                            </article>
+							<article class="post side-item content-padding with_shadow">
+								<div class="row">
+                    
+                             <div class="col-sm-12">
+                                <div class="form-group">
+                                   Q-4) Feeling tired or having little energy?
+                                   <input type="hidden" name="qid4" value="1104">
+                                   <span class="required">*</span>
+
+                                     <div class="radio">
+                                         <label>
+                                             
+                                <input type="radio" class="form-control " name="q4" value="0" style="height:50px ; width: 20px;margin-top: -10px;" >  &nbsp;&nbsp;&nbsp;Not at all <br>
+                                <input type="radio" class="form-control " name="q4" value="1" style="height:50px ; width: 20px;margin-top: -10px;" >  &nbsp;&nbsp;&nbsp; Several days <br>
+                                <input type="radio" class="form-control " name="q4" value="2" style="height:50px ; width: 20px;margin-top: -10px;">  &nbsp;&nbsp;&nbsp; More than half of the days <br> 
+                                <input type="radio" class="form-control " name="q4" value="3" style="height:50px ; width: 20px;margin-top: -10px;">  &nbsp;&nbsp;&nbsp; Nearly every day <br> 
+                               
+                                         </label>
+                                         </div>
+                                    
+                                     
+                                         
+                                 </div> 
+                                 
+                             </div>
+							</div>
+						</article>
+						<article class="post side-item content-padding with_shadow">
+							<div class="row">
+				
+                             <div class="col-sm-12">
+                                <div class="form-group">
+                                   Q-5) Poor appetite or overeating?
+                                   <input type="hidden" name="qid5" value="1105">
+                                   <span class="required">*</span>
+
+                                     <div class="radio">
+                                         <label>
+                                             
+                                <input type="radio" class="form-control " name="q5" value="0" style="height:50px ; width: 20px;margin-top: -10px;" >  &nbsp;&nbsp;&nbsp;Not at all <br>
+                                <input type="radio" class="form-control " name="q5" value="1" style="height:50px ; width: 20px;margin-top: -10px;" >  &nbsp;&nbsp;&nbsp; Several days <br>
+                                <input type="radio" class="form-control " name="q5" value="2" style="height:50px ; width: 20px;margin-top: -10px;">  &nbsp;&nbsp;&nbsp; More than half of the days <br> 
+                                <input type="radio" class="form-control " name="q5" value="3" style="height:50px ; width: 20px;margin-top: -10px;">  &nbsp;&nbsp;&nbsp; Nearly every day <br> 
+                               
+                                         </label>
+                                         </div>
+                                    
+										
+                                         
+                                 </div> 
+								
+                                 
+                             </div>
+							
+							</div>
+							
+						</article>
+                        <article class="post side-item content-padding with_shadow">
+                            <div class="row">
+                
+                        <!-- <div class="col-sm-12"> -->
+                            <div class="form-group">
+                               Q-6) Feeling bad about yourself - or that you are a failure or have let yourself or your family down?
+                               <input type="hidden" name="qid6" value="1106">
+                               <span class="required">*</span>
+
+                                 <div class="radio">
+                                     <label>
+                                         
+                            <input type="radio"  name="q6" value="0" style="height:50px ; width: 20px;margin-top: -10px; " onclick="radioValidation();" >  &nbsp;&nbsp;&nbsp;Not at all <br>
+                            <input type="radio"  name="q6" value="1" style="height:50px ; width: 20px;margin-top: -10px;" onclick="radioValidation();">  &nbsp;&nbsp;&nbsp; Several days <br>
+                            <input type="radio"  name="q6" value="2" style="height:50px ; width: 20px;margin-top: -10px;" onclick="radioValidation();">  &nbsp;&nbsp;&nbsp; More than half of the days <br> 
+                            <input type="radio"  name="q6" value="3" style="height:50px ; width: 20px;margin-top: -10px;" onclick="radioValidation();">  &nbsp;&nbsp;&nbsp; Nearly every day <br> 
+                           
+                                     </label>
+                                    <!--- </div> -->
+                                
+                                 
+                                    </div>      
+                             </div> 
+                             
+                         </div>
+                        </article>
+                        <article class="post side-item content-padding with_shadow">
+                            <div class="row">
+                
+                        <!-- <div class="col-sm-12"> -->
+                            <div class="form-group">
+                               Q-7) Trouble concentrating on things, such as reading the newspaper or watching television
+                               <input type="hidden" name="qid7" value="1107">
+                               <span class="required">*</span>
+
+                                 <div class="radio">
+                                     <label>
+                                         
+                            <input type="radio"  name="q7" value="0" style="height:50px ; width: 20px;margin-top: -10px; " onclick="radioValidation();" >  &nbsp;&nbsp;&nbsp;Not at all <br>
+                            <input type="radio"  name="q7" value="1" style="height:50px ; width: 20px;margin-top: -10px;" onclick="radioValidation();">  &nbsp;&nbsp;&nbsp; Several days <br>
+                            <input type="radio"  name="q7" value="2" style="height:50px ; width: 20px;margin-top: -10px;" onclick="radioValidation();">  &nbsp;&nbsp;&nbsp; More than half of the days <br> 
+                            <input type="radio"  name="q7" value="3" style="height:50px ; width: 20px;margin-top: -10px;" onclick="radioValidation();">  &nbsp;&nbsp;&nbsp; Nearly every day <br> 
+                           
+                                     </label>
+                                    <!--- </div> -->
+                                
+                                 
+                                    </div>      
+                             </div> 
+                             
+                         </div>
+                        </article>
+                        <article class="post side-item content-padding with_shadow">
+                            <div class="row">
+                
+                        <!-- <div class="col-sm-12"> -->
+                            <div class="form-group">
+                               Q-8) Moving or speaking so slowly that other people could have noticed
+                               Or the opposite - being so fidgety or restless that you have been moving around a lot more than usual?
+                               <input type="hidden" name="qid8" value="1108">
+                               <span class="required">*</span>
+
+                                 <div class="radio">
+                                     <label>
+                                         
+                            <input type="radio"  name="q8" value="0" style="height:50px ; width: 20px;margin-top: -10px; " onclick="radioValidation();" >  &nbsp;&nbsp;&nbsp;Not at all <br>
+                            <input type="radio"  name="q8" value="1" style="height:50px ; width: 20px;margin-top: -10px;" onclick="radioValidation();">  &nbsp;&nbsp;&nbsp; Several days <br>
+                            <input type="radio"  name="q8" value="2" style="height:50px ; width: 20px;margin-top: -10px;" onclick="radioValidation();">  &nbsp;&nbsp;&nbsp; More than half of the days <br> 
+                            <input type="radio"  name="q8" value="3" style="height:50px ; width: 20px;margin-top: -10px;" onclick="radioValidation();">  &nbsp;&nbsp;&nbsp; Nearly every day <br> 
+                           
+                                     </label>
+                                    <!--- </div> -->
+                                
+                                 
+                                    </div>      
+                             </div> 
+                             
+                         </div>
+                        </article>
+                        <article class="post side-item content-padding with_shadow">
+                            <div class="row">
+                
+                        <!-- <div class="col-sm-12"> -->
+                            <div class="form-group">
+                               Q-9)Thoughts that you would be better off dead, or of hurting yourself?
+                               <input type="hidden" name="qid9" value="1109">
+                               <span class="required">*</span>
+
+                                 <div class="radio">
+                                     <label>
+                                         
+                            <input type="radio"  name="q9" value="0" style="height:50px ; width: 20px;margin-top: -10px; " onclick="radioValidation();" >  &nbsp;&nbsp;&nbsp;Not at all <br>
+                            <input type="radio"  name="q9" value="1" style="height:50px ; width: 20px;margin-top: -10px;" onclick="radioValidation();">  &nbsp;&nbsp;&nbsp; Several days <br>
+                            <input type="radio"  name="q9" value="2" style="height:50px ; width: 20px;margin-top: -10px;" onclick="radioValidation();">  &nbsp;&nbsp;&nbsp; More than half of the days <br> 
+                            <input type="radio"  name="q9" value="3" style="height:50px ; width: 20px;margin-top: -10px;" onclick="radioValidation();">  &nbsp;&nbsp;&nbsp; Nearly every day <br> 
+                           
+                                     </label>
+                                    <!--- </div> -->
+                                
+                                 
+                                    </div>      
+                             </div> 
+                             
+                         </div>
+                        </article>
+                        <article class="post side-item content-padding with_shadow">
+                            <div class="row">
+                
+                        <!-- <div class="col-sm-12"> -->
+                            <div class="form-group">
+                               Q-10)If you checked off any problems, how difficult have these problems made it for you at work, home, or with other people?
+                               <input type="hidden" name="qid10" value="1110">
+                               <span class="required">*</span>
+
+                                 <div class="radio">
+                                     <label>
+                                         
+                            <input type="radio"  name="q10" value="0" style="height:50px ; width: 20px;margin-top: -10px; " onclick="radioValidation();" >  &nbsp;&nbsp;&nbsp;Not at all <br>
+                            <input type="radio"  name="q10" value="1" style="height:50px ; width: 20px;margin-top: -10px;" onclick="radioValidation();">  &nbsp;&nbsp;&nbsp; Several days <br>
+                            <input type="radio"  name="q10" value="2" style="height:50px ; width: 20px;margin-top: -10px;" onclick="radioValidation();">  &nbsp;&nbsp;&nbsp; More than half of the days <br> 
+                            <input type="radio"  name="q10" value="3" style="height:50px ; width: 20px;margin-top: -10px;" onclick="radioValidation();">  &nbsp;&nbsp;&nbsp; Nearly every day <br> 
+                           
+                                     </label>
+                                    <!--- </div> -->
+                                
+                                 
+                                    </div>      
+                             </div> 
+                             
+                         </div>
+                        </article>
+					
+						<div>
+	<!--				<input class="submit" type="submit" value="Submit"> -->		
+   
+						<button type="submit" class="theme_button color2 topmargin_40" style="border-radius: 500px;""  href ="result"; >Submit</button> 
+						</form>
+					
+                    
+                    </div>
+                </div>
+            </section>
+            
+
+
+
+            <section class="cs main_color2 page_copyright section_padding_15">
+				<div class="container with_top_border">
+					<div class="row">
+						<div class="col-sm-12 text-center">
+							<p class="small-text">Mental Health-Break The Myth</p>
+						</div>
+					</div>
+				</div>
+			</section>
+
+		</div>
+		<!-- eof #box_wrapper -->
+	</div>
+	<!-- eof #canvas -->
+
+
+	
+<!--<script>
+	$(document).ready(function(){
+		$("#myform").validate();
+	});
+</script> -->
+<script>
+    
+    function formvalidate() { 
+        
+        
+       
+        
+        
+        
+      
+        var q1 = document.getElementsByName('q1');
+        var q1Value = false;
+
+        for(var i=0; i<q1.length;i++)
+        {
+            if(q1[i].checked == true)
+            {
+                q1Value = true;    
+            }
+        }
+        if(!q1Value)
+        {
+            alert("Please Select option for question1");
+            return false;
+        }
+
+        if (message.value == "") { 
+            window.alert("Please Enter Message"); 
+            message.focus(); 
+            return false; 
+        } 
+
+        if(!this.agree.checked)
+    {
+        alert('You must agree to the terms first.');
+        agree.focus(); 
+        return false;
+    }
+
+        
+        
+	var q2 = document.getElementsByName('q2');
+        var q2Value = false;
+
+        for(var i=0; i<q2.length;i++)
+        {
+            if(q2[i].checked == true)
+            {
+                q2Value = true;    
+            }
+        }
+        if(!q2Value)
+        {
+            alert("Please Select option for question2");
+            return false;
+        }
+
+        if (message.value == "") { 
+            window.alert("Please Enter Message"); 
+            message.focus(); 
+            return false; 
+        } 
+
+        if(!this.agree.checked)
+    {
+        alert('You must agree to the terms first.');
+        agree.focus(); 
+        return false;
+    }
+  
+
+    
+
+    
+    }
+
+    function Validate(no) {
+                   no.value = no.value.replace(/[^ 0-9\n\r]+/g, '');
+               }
+               
+               function Validatestring(no) {
+                   no.value = no.value.replace(/[^ a-z A-Z\n\r]+/g, '');
+                   var myuser_name = document.forms["myform"]["user_name"]; 
+                   user_name =myuser_name.value;
+                   if (user_name.length < 3)
+    {
+    alert("Name must be atleast 3 charactrs long, Please Try Again");
+    return false;
+    } 
+               }
+
+           
+
+
+
+
+
+function validateEmail(emailField){
+        var reg = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
+
+        if (reg.test(emailField.value) == false) 
+        {
+            alert('Invalid Email Address');
+            document.forms["myform"]["user_email"].focus();
+            return false;
+            
+        }
+
+        return true;
+
+}
+
+function phonenumber(inputtxt)
+{
+  var phoneno = /^\d{10}$/;
+  if((inputtxt.value.match(phoneno)))
+        {
+      return true;
+        }
+      else
+        {
+        alert("Please Enter Valid 10 Digit Mobile No");
+        document.forms["myform"]["user_mobile"].focus();
+        return false;
+        }
+}
+
+
+
+
+function checkPassword(form) { 
+    user_password = document.forms["myform"]["user_password"]; 
+    confirm_password    = document.forms["myform"]["confirm_password"]; 
+  
+                password1=user_password.value;
+                password2=confirm_password.value;
+                // If password not entered 
+                if (password1 == '') 
+                    alert ("Please enter Password"); 
+                      
+                // If confirm password not entered 
+                else if (password2 == '') 
+                    alert ("Please enter confirm password"); 
+                      
+                // If Not same return False.     
+                else if (password1 != password2) { 
+                    alert ("Password did not match: Please try again...") 
+                    return false; 
+                } 
+  
+                // If same return True. 
+                else{ 
+                    // alert("Password Match.") 
+                    return true; 
+                } 
+            } 
+
+    
+    </script>
+
+
+<!--	<script src="js/switcher.js"></script> -->
+
+</body>
+
+
+<!-- Mirrored from html.modernwebtemplates.com/psychologist/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 20 Dec 2021 17:09:49 GMT -->
+</html>

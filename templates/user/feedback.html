@@ -1,0 +1,412 @@
+{% load static %}
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+
+<!-- Mirrored from html.modernwebtemplates.com/psychologist/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 20 Dec 2021 17:09:08 GMT -->
+<head>
+	<title>MentaL-Health Break The Myth</title>
+	<meta charset="utf-8">
+	<!--[if IE]>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<![endif]-->
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+	<link  rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+	<link  rel="stylesheet" href="{% static 'css/animations.css' %}">
+	<link    rel="stylesheet" href="{% static 'css/fonts.css' %}">
+	<link  rel="stylesheet" href="{% static 'css/main.css' %}" class="color-switcher-link">
+	<script src="{% static 'js/vendor/modernizr-2.6.2.min.js' %}"></script>
+
+	<!--[if lt IE 9]>
+		<script src="js/vendor/html5shiv.min.js"></script>
+		<script src="js/vendor/respond.min.js"></script>
+		<script src="js/vendor/jquery-1.12.4.min.js"></script>
+	<![endif]-->
+	
+</head>
+
+
+<body>
+	<!--[if lt IE 9]>
+		<div class="bg-danger text-center">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/" class="highlight">upgrade your browser</a> to improve your experience.</div>
+	<![endif]-->
+
+	<!--<div class="preloader">
+		<div class="preloader_image"></div>
+	</div>-->
+
+	<!-- search modal -->
+	<div class="modal" tabindex="-1" role="dialog" aria-labelledby="search_modal" id="search_modal">
+		<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			<span aria-hidden="true">
+				<i class="rt-icon2-cross2"></i>
+			</span>
+		</button>
+		<div class="widget widget_search">
+			<form method="get" class="searchform search-form form-inline" action="https://html.modernwebtemplates.com/psychologist/">
+				<div class="form-group">
+					<input type="text" value="" name="search" class="form-control" placeholder="Search keyword" id="modal-search-input">
+				</div>
+				<button type="submit" class="theme_button">Search</button>
+			</form>
+		</div>
+	</div>
+
+	<!-- Unyson messages modal -->
+	<div class="modal fade" tabindex="-1" role="dialog" id="messages_modal">
+		<div class="fw-messages-wrap ls with_padding">
+			<!-- Uncomment this UL with LI to show messages in modal popup to your user: -->
+			<!--
+		<ul class="list-unstyled">
+			<li>Message To User</li>
+		</ul>
+		-->
+
+		</div>
+	</div>
+	<!-- eof .modal -->
+
+	<!-- wrappers for visual page editor and boxed version of template -->
+	<div id="canvas">
+		<div id="box_wrapper">
+
+			{% include 'user/sidebaruserpanel.html' %}        <section class="page_breadcrumbs ds background_cover section_padding_50">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-12 text-center">
+                            <h2>Feedback</h2> 
+            
+                            <ol class="breadcrumb divided_content wide_divider">
+                                <li>
+                                    <a href="index.html">
+                                        Others
+                                    </a>
+                                </li>
+                                
+                                <li class="active">Feedback</li>
+                                <!--<li class="active">Registration</li> -->
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </section>
+			<section class="ls section_padding_top_100 section_padding_bottom_-5">
+                <div class="container">
+			
+				   
+
+					<div class="row">
+						<div class="col-md-12">
+							<div class="row">
+								<div class="col-md-12">
+									<h3 style="text-align: center;">Mental-Health Break The Myth wants the best for you. <br> Give your valuable Opinion </h3>
+								</div>
+							</div>
+							<div class="row vertical-tabs">
+								<div class="col-sm-4">
+
+									<!-- Nav tabs -->
+									<ul class="nav" role="tablist">
+										<li class="active">
+											<a href="#vertical-tab1" role="tab" data-toggle="tab">
+												<i class="rt-icon2-home2"></i> Enter Valuable Feedback 
+											</a>
+										</li>
+											
+										</ul>
+								</div>
+								<form method="POST" action="/user/feedback/inserted"  id="myform" enctype="multipart/form-data">
+									{% csrf_token %}
+							
+								<div class="col-sm-8">
+
+									<!-- Tab panes -->
+									<div class="tab-content">
+										<div class="tab-pane fade in active" id="vertical-tab1">
+											<p>
+											</article>
+												<article class="post side-item content-padding with_shadow">
+													<div class="row">
+										
+												<div class="col-sm-12">
+													<div class="form-group">
+													   Q-1) Did you get any help from our website?
+													   <span class="required">*</span>
+													   <div class="abc">
+														   </div>
+														 <div class="radio">
+															 <label>
+													
+																
+													<input type="radio" class="form-control " name="q1" value="yes" style="height:50px ; width: 20px;margin-top: -10px;" required>  &nbsp;&nbsp;&nbsp;Yes <br>
+													<input type="radio" class="form-control " name="q1" value="no" style="height:50px ; width: 20px;margin-top: -10px;"  required>  &nbsp;&nbsp;&nbsp; No <br>
+													<input type="radio" class="form-control " name="q1" value="somewhat" style="height:50px ; width: 20px;margin-top: -10px;" required>  &nbsp;&nbsp;&nbsp; Some what <br> 
+													
+															 </label>
+															 </div>
+													</div>		 
+														 
+															 
+													 </div> 
+													 
+												 </div>
+												 </article>
+												 <article class="post side-item content-padding with_shadow">
+					
+													<div class="row">
+												   
+													<div class="col-sm-12">
+														<div class="form-group validate-required validate-email" id="email">
+															<label for="billing_email" class="control-label">
+																<span style="color:grey;  " >Q-2) How was your experience from taking help from our website ? </span>
+															</label>
+															<br>
+															
+															<textarea rows="10" cols="5" style="width: 639px; height: 173px;" name="q2" required></textarea> 
+																
+															<!--<textarea rows="10" cols="5" >  -->
+															<!--<input type="text"  class="form-control " name="email" id="email" placeholder="" value="" > --> 
+									
+														</div>
+														</div>
+													</article>
+												
+													<article class="post side-item content-padding with_shadow">
+					
+														<div class="row">
+													   
+														<div class="col-sm-12">
+															<div class="form-group validate-required validate-email" id="email">
+																<label for="billing_email" class="control-label">
+																	<span style="color:grey;  " >Q-3) How would you rate are website?  </span>
+																	<span class="required">*</span>
+																</label><br><br>
+																<div class="radio">
+																	<label>
+														   
+																<input type="radio" class="form-control " name="q3" value="yes" style="height:40px ; width: 20px;margin-top: -10px;" required>  &nbsp;&nbsp;&nbsp;Good  <br>
+																	<input type="radio" class="form-control " name="q3" value="no" style="height:50px ; width: 20px;margin-top: -10px;"  required>  &nbsp;&nbsp;&nbsp; Average <br>	
+																	<input type="radio" class="form-control " name="q3" value="no" style="height:50px ; width: 20px;margin-top: -10px;"  required>  &nbsp;&nbsp;&nbsp; Better <br>
+																	<input type="radio" class="form-control " name="q3" value="somewhat" style="height:50px ; width: 20px;margin-top: -10px;" required>  &nbsp;&nbsp;&nbsp; Best <br> 
+																
+																		</label>
+																		</div>
+																<!--<input type="text"  class="form-control " name="email" id="email" placeholder="" value="" > --> 
+										
+															</div>
+															</div>
+														</article>
+														<article class="post side-item content-padding with_shadow">
+															<div class="row">
+												
+														<div class="col-sm-12">
+															<div class="form-group">
+															   Q-4) Do you have any complaint regarding expert and doctor?
+															   <span class="required">*</span>
+							
+															   <textarea rows="10" cols="5" name="q4" style="width: 639px; height: 173px;"></textarea> 													
+															</div>		 
+																 
+																	 
+															 </div> 
+															 
+														 </div>
+														 </article>
+														 <article class="post side-item content-padding with_shadow">
+															<div class="row">
+												
+														<div class="col-sm-12">
+															<div class="form-group">
+															   Q-5) Are There Any Mental Health Topics We Haven't Included That You Would Like To Learn More About?
+															   
+															   <textarea rows="10" cols="5" name="q5" style="width: 639px; height: 173px;"></textarea> 													
+															</div>		 
+																 
+																	 
+															 </div> 
+															 
+														 </div>
+														 </article>
+														 <article class="post side-item content-padding with_shadow">
+															<div class="row">
+												
+														 <div class="col-sm-12">
+															<div class="form-group">
+																Q-6) From whom you have taken help?
+													   
+																<div class="checkbox">
+																	<label>
+																		
+														   <input type="checkbox" class="form-control " name="q6" value="Bhoomika Gupta" style="height:50px ; width: 20px;margin-top: -10px;" >  &nbsp;&nbsp;&nbsp;Bhoomika Gupta&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" class="form-control " name="q6" value="Shreya Madan" style="height:50px ; width: 20px;margin-top: -10px;" > &nbsp;&nbsp;&nbsp;Shreya Madan <br>
+														   <input type="checkbox" class="form-control " name="q6" value="Gautam Krishnan " style="height:50px ; width: 20px;margin-top: -10px;" >  &nbsp;&nbsp; Gautam Krishnan&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	<input type="checkbox" class="form-control " name="q6" value="Mrunmayi Adawadkar" style="height:50px ; width: 20px;margin-top: -10px;" > &nbsp;&nbsp;&nbsp;Mrunmayi Adawadkar <br>
+														   <input type="checkbox" class="form-control " name="q6" value="Parth Kalia" style="height:50px ; width: 20px;margin-top: -10px;">  &nbsp;&nbsp;&nbsp; Parth Kalia &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	<input type="checkbox" class="form-control " name="q6" value="Srishti Bajoria" style="height:50px ; width: 20px;margin-top: -10px;" > &nbsp;&nbsp;&nbsp;Srishti Bajoria <br> 
+																  
+															</div>
+															</div>
+															</div>
+														</article>	
+														<article class="post side-item content-padding with_shadow">
+															<div class="row">
+																
+															<div class="col-sm-12">
+																<div class="form-group">
+																	Q-7)Rate the service provided?  
+																	<br><br>
+																	<div class="radio">
+																		<label>
+																	<input type="radio" class="form-control " name="q7" value="yes" style="height:50px ; width: 20px;margin-top: -10px;" required>  &nbsp;&nbsp;&nbsp;Good  <br>
+																	<input type="radio" class="form-control " name="q7" value="no" style="height:50px ; width: 20px;margin-top: -10px;"  required>  &nbsp;&nbsp;&nbsp; Average <br>	
+																	<input type="radio" class="form-control " name="q7" value="no" style="height:50px ; width: 20px;margin-top: -10px;"  required>  &nbsp;&nbsp;&nbsp; Better <br>
+																	<input type="radio" class="form-control " name="q7" value="somewhat" style="height:50px ; width: 20px;margin-top: -10px;" required>  &nbsp;&nbsp;&nbsp; Best <br> 
+																</label>
+																</div>
+																</div>		 
+																 
+																	 
+															 </div> 
+															 </div>
+															 </article>
+															 <article class="post side-item content-padding with_shadow">
+																<div class="row">
+													
+															 <div class="col-sm-12">
+																<div class="form-group">
+																	Q-8) From whom you have taken help?
+														   
+																	<div class="checkbox">
+																		<label>
+																			
+															   <input type="checkbox" class="form-control " name="q8"  value="Dr. Soumya Pandya" style="height:50px ; width: 20px;margin-top: -10px;" >  &nbsp;&nbsp;&nbsp;Dr. Soumya Pandya &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" class="form-control " name="q8" value="Dr. Nitish Bose" style="height:50px ; width: 20px;margin-top: -10px;" > &nbsp;&nbsp;&nbsp;Dr. Nitish Bose<br>
+															   	  
+																</div>
+																</div>
+																</div>
+															</article>
+															<article class="post side-item content-padding with_shadow">
+																<div class="row">
+													
+															 <div class="col-sm-12">
+																<div class="form-group">
+																	Q-9)Rate the service provided?  
+																	<br><br>
+																	<div class="radio">
+																		<label>
+																	<input type="radio" class="form-control " name="q9" value="yes" style="height:50px ; width: 20px;margin-top: -10px;" required>  &nbsp;&nbsp;&nbsp;Good  <br>
+																	<input type="radio" class="form-control " name="q9" value="no" style="height:50px ; width: 20px;margin-top: -10px;"  required>  &nbsp;&nbsp;&nbsp; Average <br>	
+																	<input type="radio" class="form-control " name="q9" value="no" style="height:50px ; width: 20px;margin-top: -10px;"  required>  &nbsp;&nbsp;&nbsp; Better <br>
+																	<input type="radio" class="form-control " name="q9" value="somewhat" style="height:50px ; width: 20px;margin-top: -10px;" required>  &nbsp;&nbsp;&nbsp; Best <br> 
+																</label>
+																</div>
+																</div>		 
+															
+															 </div> 
+															
+														 </div>
+														 
+														</article>
+											
+											 </p>
+											 <button type="submit"  class="topmargin_40"  >Submit</button>
+											</form>
+											</div>
+											
+											</p>
+												</div>
+									
+									
+							</div>
+							
+						</div>
+						
+					</div>
+							
+							
+							
+					</section>
+					<section class="cs main_color2 page_copyright section_padding_15">
+						<div class="container with_top_border">
+							<div class="row">
+								<div class="col-sm-12 text-center">
+									<p class="small-text">Mental Health-Break The Myth</p>
+								</div>
+							</div>
+						</div>
+					</section>
+		
+				</div>
+				<!-- eof #box_wrapper -->
+			</div>
+			<!-- eof #canvas -->
+		
+			<script data-cfasync="false" src="{% static '../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js' %}"></script><script src="{% static 'js/compressed.js' %}"></script>
+	<script src="{% static 'js/main.js' %}" ></script>
+	<script type="text/javascript" src="{% static 'mytools/jquery-3.6.0.js'%}"></script>
+<script type="text/javascript" src="{% static 'mytools/validation/jquery.validate.js'%}"/></script>
+
+<style>
+	.error{
+		color:red;
+	}
+	
+</style>
+<!-- <script>
+	$(document).ready(function(){
+		$("#myform").validate();
+		
+	}); 
+</script> -->
+
+<script>
+	$(function()
+  {
+    $('#myform').validate(
+      {
+        rules:
+        {
+			q1:{ required:true }
+        },
+        messages:
+        {
+			q1:
+          {
+            required:"Please select a gender<br>"
+          }
+        },
+        errorPlacement: function(error, element) 
+        {
+            if ( element.is(":radio") ) 
+            {
+                error.insertAfter( ".abc" );
+            }
+            else 
+            { // This is the default behavior 
+                error.insertAfter( element );
+            }
+         }
+      });
+    
+  });
+</script>
+
+		<!--	<script src="js/switcher.js"></script> -->
+		
+		</body>
+		
+		
+		<!-- Mirrored from html.modernwebtemplates.com/psychologist/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 20 Dec 2021 17:09:49 GMT -->
+		</html>              
+
+				          
+
+
+
+           

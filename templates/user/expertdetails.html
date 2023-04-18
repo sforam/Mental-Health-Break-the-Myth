@@ -1,0 +1,363 @@
+{% load static %}
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+
+<!-- Mirrored from html.modernwebtemplates.com/psychologist/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 20 Dec 2021 17:09:08 GMT -->
+<head>
+	<title>MentaL-Health Break The Myth</title>
+	<meta charset="utf-8">
+	<!--[if IE]>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<![endif]-->
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+	<link  rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+	<link  rel="stylesheet" href="{% static 'css/animations.css' %}">
+	<link    rel="stylesheet" href="{% static 'css/fonts.css' %}">
+	<link  rel="stylesheet" href="{% static 'css/main.css' %}" class="color-switcher-link">
+	<script src="{% static 'js/vendor/modernizr-2.6.2.min.js' %}"></script>
+
+	<!--[if lt IE 9]>
+		<script src="js/vendor/html5shiv.min.js"></script>
+		<script src="js/vendor/respond.min.js"></script>
+		<script src="js/vendor/jquery-1.12.4.min.js"></script>
+	<![endif]-->
+	
+</head>
+
+<body>
+	<!--[if lt IE 9]>
+		<div class="bg-danger text-center">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/" class="highlight">upgrade your browser</a> to improve your experience.</div>
+	<![endif]-->
+
+	<div class="preloader">
+		<div class="preloader_image"></div>
+	</div>
+
+	<!-- search modal -->
+
+	
+	<div class="modal" tabindex="-1" role="dialog" aria-labelledby="search_modal" id="search_modal">
+		<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			<span aria-hidden="true">
+				<i class="rt-icon2-cross2"></i>
+			</span>
+		</button>
+		<div class="widget widget_search">
+			<form method="get" class="searchform search-form form-inline" action="https://html.modernwebtemplates.com/psychologist/">
+				<div class="form-group">
+					<input type="text" value="" name="search" class="form-control" placeholder="Search keyword" id="modal-search-input">
+				</div>
+				<button type="submit" class="theme_button">Search</button>
+			</form>
+		</div>
+	</div>
+
+	<!-- Unyson messages modal -->
+	<div class="modal fade" tabindex="-1" role="dialog" id="messages_modal">
+		<div class="fw-messages-wrap ls with_padding">
+			<!-- Uncomment this UL with LI to show messages in modal popup to your user: -->
+			<!--
+		<ul class="list-unstyled">
+			<li>Message To User</li>
+		</ul>
+		-->
+
+		</div>
+	</div>
+	<!-- eof .modal -->
+
+	<!-- wrappers for visual page editor and boxed version of template -->
+	<div id="canvas">
+		<div id="box_wrapper">
+
+			{% include 'user/sidebaruserpanel.html' %}
+			
+
+			<section class="page_breadcrumbs ds background_cover section_padding_50">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-12 text-center">
+							<h2>Expert</h2>
+							<ol class="breadcrumb divided_content wide_divider">
+								<li>
+									<a href="index3">
+										Home
+									</a>
+								</li>
+								<li>
+									<a href="#">Expert</a>
+								</li>
+								<li class="active">{{data.2}}</li>
+							</ol>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="ls section_padding_top_130 section_padding_bottom_130 columns_padding_25">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-5">
+							<div class="vertical-item content-padding with_shadow text-center">
+								<div class="item-media">
+									<img src="{% static 'images/expert/bhoomika.png' %}" alt="">
+								</div>
+								<div class="item-content">
+									<h4 class="bottommargin_5">
+										<a href="bhoomika"><u>{{data.2}}</u></a> 
+										<br>
+							<!--			<p  class="rt-icon2-media-play-outline" style="font-size: 25px;"><a href="{% static 'Videos/bhoomika.mp4' %}"><u>Watch video </u></a></p>
+									</h4>--><br>
+									<a href="book_expert_bhoomika">
+										<div class="book-button">BOOK</div> </a>                   
+								   
+										</div>
+							</div>
+						</div>
+						<div class="col-md-6">
+							
+						
+							<!-- Nav tabs -->
+							<ul class="nav nav-tabs topmargin_40" role="tablist">
+								<li class="active">
+									<a href="#tab1" role="tab" data-toggle="tab">Biography</a>
+								</li>
+
+							</ul>
+
+							<!-- Tab panes -->
+							<div class="tab-content top-color-border bottommargin_40">
+
+								<div class="tab-pane fade in active" id="tab1">
+									<h3 class="topmargin_0">{{data.2}} 
+									<div style="font-size:medium; color: black;">	B.A &nbsp; M.A&nbsp; </div> </h3>
+									<p>
+										Senior Consultant Psychologist<br>
+                                        I'm a human being with flaws, who aims to become better each day by staying hopeful about a better tomorrow. Keeping an open mind and a flexible attitude helps me in cultivating this hope further. I've completed my MPhil in Clinical Psychology from NIMHANS, Bengaluru, and have seen a variety of clien<span id="dots">...</span><span id="more">ts with diverse mental health conditions, ranging from stress and strain to more complex forms of childhood trauma, anxiety, OCD, depression, personality concerns, schizophrenia, marital discord, interpersonal related issues etc. I've grown with my clients, and have been motivated to keep learning more, solely for the betterment of their mental health. I adhere to a non-directive style of therapy, believing in the notion of "leading from one step behind" in the sessions. In my free time, I usually write, read, travel or watch movies, which helps in nurturing my own mind, so I could continue catering to those of others, with ease.</span>
+
+                                    </p>
+									<button onclick="myFunction()" id="myBtn">Read more</button>
+									
+								</div>
+
+								
+														</div>
+							<!-- eof .tab-content -->
+							
+							<blockquote>
+								<p class="highlight" style="font-size:large ">“We can ignore the reality, but we cannot ignore the consequences of ignoring reality” <br>-Ayn Rand, Author</p>
+								<div class="item-meta">
+								<!---	<h5>Sean Watts</h5> -->
+								</div>
+							</blockquote>
+							<p style="color: black; font-size: large;"><b>Bhoomika offers therapy in:</b></p>
+							<div class="row columns_padding_0 columns_margin_0 fontsize_16">
+								<div class="col-md-3 col-sm-6">
+									<div class="with_padding text-center teaser hover_shadow">
+										<img src="{% static 'images/Resources/Anxity.svg' %}" alt="" />
+										<h4>
+											<a href="Anxiety">Anxiety</a>
+										</h4>
+										
+									</div>
+								</div>
+								<div class="col-md-3 col-sm-6">
+									<div class="with_padding text-center teaser hover_shadow">
+										<img src="{% static 'images/Resources/Stress.svg' %}" alt="" />
+										<h4>
+											<a href="Stress">Stress</a>
+										</h4>
+										
+									</div>
+								</div>
+								<div class="col-md-3 col-sm-6 clear-sm">
+									<div class="with_padding text-center teaser hover_shadow">
+										<img src="{% static 'images/Resources/Grief.svg' %}" alt="" />
+										<h4>
+											<a href="Grief">Grief</a>
+										</h4>
+										
+									</div>
+								</div>
+								<div class="col-md-3 col-sm-6">
+									<div class="with_padding text-center teaser hover_shadow">
+										<img src="{% static 'images/Resources/Depression.svg' %}" alt="" />
+										<h4>
+											<a href="Depression">Depression</a>
+										</h4>
+										
+									</div>
+								</div>
+								<div class="col-md-3 col-sm-6 clear-lg clear-md clear-sm">
+									<div class="with_padding text-center teaser hover_shadow">
+										<img src="{% static 'images/Resources/Addiction.svg' %}" alt="" />
+										<h4>
+											<a href="Addictio">Addiction</a>
+										</h4>
+										
+									</div>
+								</div>
+								<div class="col-md-3 col-sm-6">
+									<div class="with_padding text-center teaser hover_shadow">
+										<img src="{% static 'images/Resources/SleepDisturbances.svg' %}" alt="" />
+										<h4>
+											<a href="Sleep Disturbances">Sleep Disorder</a>
+										</h4>
+										
+									</div>
+								</div>
+								<div class="col-md-3 col-sm-6 clear-sm">
+									<div class="with_padding text-center teaser hover_shadow">
+										<img src="{% static 'images/Resources/Mood.png' %}" alt="" />
+										<h4>
+											<a href="Mood Disorder">Mood Disorders</a>
+										</h4>
+										
+									</div>
+								</div>
+								<div class="col-md-3 col-sm-6">
+									<div class="with_padding text-center teaser hover_shadow">
+										<img src="{% static 'images/Resources/Eating Disorders.png' %}" alt="" />
+										<h4>
+											<a href="Eating Disorder">Eating Disorders</a>
+										</h4>
+									</div>
+								</div>
+							
+							</div>
+							<p style="color: black; font-size: large;"><b>FAQs:</b></p>
+							
+						
+					<div class="container">
+	
+						<div class="row">
+							<div class="row columns_padding_0 columns_margin_0 fontsize_16">
+								<div class="panel-group" id="accordion1">
+									<div class="panel panel-default">
+										<div class="panel-heading">
+											<h4 class="panel-title">
+												<a data-toggle="collapse" data-parent="#accordion1" href="#collapse1" class="collapsed">
+													Why did you choose to become a therapist?
+												</a>
+											</h4>
+										</div>
+										<div id="collapse1" class="panel-collapse collapse">
+											<div class="panel-body">
+												I think of myself as a perceptive and curious person, which has naturally helped me delve into the mould of a therapist. Witnessing my sibling's battle and victory with depression in my formative years, strengthened my belief in the power of therapeutic assistance. It has grown ever since, and I have aimed at growing with it, to translate my knowledge, skills and potential into effective therapeutic practice for others.
+											</div>
+										</div>
+									</div>
+									<div class="panel panel-default">
+										<div class="panel-heading">
+											<h4 class="panel-title">
+												<a data-toggle="collapse" data-parent="#accordion1" href="#collapse2" class="collapsed">
+													What would you like to tell a client who comes to you for therapy?
+												</a>
+											</h4>
+										</div>
+										<div id="collapse2" class="panel-collapse collapse">
+											<div class="panel-body">
+												I would like to acknowledge and appreciate the courage the client has shown to seek therapy. Therapy is a slow process and takes time, so I would request the client to be patient with themselves while we work towards a better future, with a little bit of effort and lots of hope.	
+											</div>
+										</div>
+									</div>
+									<div class="panel panel-default">
+										<div class="panel-heading">
+											<h4 class="panel-title">
+												<a data-toggle="collapse" data-parent="#accordion1" href="#collapse3" class="collapsed">
+													What does a first session with you look like?
+												</a>
+											</h4>
+										</div>
+										<div id="collapse3" class="panel-collapse collapse">
+											<div class="panel-body">
+												I use the first session to understand the nature of your concerns and conceptions or misconceptions about them. I try to elicit your expectations and goals from therapy, and from yourself - using a mutually collaborative framework. While all this is happening, I work on generating sufficient motivation towards change and ensuring that you are consistently able to adhere to it, for a better future.
+											</div>
+										</div>
+									</div>
+									<div class="panel panel-default">
+										<div class="panel-heading">
+											<h4 class="panel-title">
+												<a data-toggle="collapse" data-parent="#accordion1" href="#collapse4" class="collapsed">
+													What has been an important learning of being a therapist?
+												</a>
+											</h4>
+										</div>
+										<div id="collapse4" class="panel-collapse collapse">
+											<div class="panel-body">
+												I have learned that successful therapy doesn't come out of a manual. It is individually tailored for every client, and hence there is no ""one size fits all"" approach to therapy, rather there are as many skews as there are human minds.
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+	
+						
+					</div>
+				
+				</div>
+
+			</div>
+		</div>
+	</div>
+</div>
+
+
+			
+			</section>
+
+			<footer class="page_footer cs main_color2 table_section section_padding_50 columns_padding_0">
+                <section class="cs main_color2 page_copyright section_padding_15">
+                    <div class="container with_top_border">
+                        <div class="row">
+                            <div class="col-sm-12 text-center">
+								<p class="small-text">These are difficult times and our team is here for you. If you are looking for any kind of mental health support - for yourself, your loved ones, or your workplace - don't hesitate to reach out to us.</p>
+                                <p class="small-text">Mental Health-Break The Myth</p>
+                            </div>
+                        </div>
+                    </div>
+					
+                </section>
+				
+    
+			</footer>
+		<!-- eof #box_wrapper -->
+	</div>
+	<!-- eof #canvas -->
+
+	<script data-cfasync="false" src="{% static '../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js' %}"></script><script src="{% static 'js/compressed.js' %}"></script>
+	<script src="{% static 'js/main.js' %}" ></script>
+	
+</body>
+
+
+<!-- Mirrored from html.modernwebtemplates.com/psychologist/team-single.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 20 Dec 2021 17:11:49 GMT -->
+
+<script>
+	function myFunction() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("more");
+  var btnText = document.getElementById("myBtn");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more";
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less";
+    moreText.style.display = "inline";
+  }
+}
+	</script>
+</html>

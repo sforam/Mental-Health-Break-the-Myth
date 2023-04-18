@@ -1,0 +1,209 @@
+{% load static %}
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+
+<!-- Mirrored from html.modernwebtemplates.com/psychologist/admin_orders.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 20 Dec 2021 17:11:58 GMT -->
+<head>
+	<title>MentaL-Health Break The Myth</title>
+	<meta charset="utf-8">
+	<!--[if IE]>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<![endif]-->
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+	<link  rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+	<link  rel="stylesheet" href="{% static 'css/animations.css' %}">
+	<link    rel="stylesheet" href="{% static 'css/fonts.css' %}">
+	<link  rel="stylesheet" href="{% static 'css/main.css' %}" class="color-switcher-link">
+	<script src="{% static 'js/vendor/modernizr-2.6.2.min.js' %}"></script>
+	<link rel="stylesheet" href="{% static 'css/dashboard.css' %}" class="color-switcher-link">
+
+	<!--[if lt IE 9]>
+		<script src="js/vendor/html5shiv.min.js"></script>
+		<script src="js/vendor/respond.min.js"></script>
+		<script src="js/vendor/jquery-1.12.4.min.js"></script>
+	<![endif]-->
+
+</head>
+
+<body class="admin">
+	<!--[if lt IE 9]>
+		<div class="bg-danger text-center">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/" class="highlight">upgrade your browser</a> to improve your experience.</div>
+	<![endif]-->
+
+	<div class="preloader">
+		<div class="preloader_image"></div>
+	</div>
+
+	
+	
+	<div id="canvas">
+		<div id="box_wrapper">
+
+			<!-- template sections -->
+			{% include 'admin/sidebar.html' %}
+<section class="ls section_padding_top_20 section_padding_bottom_150 columns_padding_10">
+				<div class="container-fluid">
+
+					<div class="row">
+						<div class="col-md-12">
+							<h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Content Table</h3>
+						</div>
+						<!-- .col-* -->
+					</div>
+					<!-- .row -->
+
+					<div class="row">
+						<div class="col-xs-12">
+							<div class="with_border with_padding">
+								<div class="row admin-table-filters">
+									<div class="col-lg-9">
+									</div>
+									<!-- .col-* -->
+									<div class="col-lg-4 text-lg-left">
+										
+                                               <a href="/admin1/admin_content/create"><button type="submit" class="theme_button">Add </button></a>
+
+									
+									</div>
+									<!-- .col-* -->
+								</div>
+								<!-- .row -->
+
+								<div class="table-responsive">
+									<table class="table table-striped table-bordered">
+										<tr>
+											<td class="media-middle text-center">
+												<input type="checkbox">
+											</td>
+											<th>Serail&nbsp;No</th>
+											<th>Contype&nbsp;Name:</th>
+                                            <th>Con&nbsp;Name:</th>
+											<th>Status:</th>
+                                          
+											<th>Image:</th>
+											<th>Audio:</th>
+											<th>Video:</th>
+											<th></th>
+											<th></th>
+										   
+											</tr>
+											{% for i in contents %}
+										<tr class="item-editable">
+											<td class="media-middle text-center">
+												<input type="checkbox">
+											</td>
+											<td class="media-middle">
+												{{i.0}}
+											</td>
+											<td>
+												<div class="media">
+													<div class="media-body">
+														<h5>
+															{{i.1}}
+														</h5>
+														
+													</div>
+												</div>
+											</td>
+                                            <td class="media-middle">
+                                                {{i.2}}    
+                                            </td>
+											<td class="media-middle">
+												{{i.3}}
+											</td>
+											
+											<td>
+												
+												<img src="/static/images/{{i.5}}" alt="">
+											
+											</td>
+											<td>
+												{{i.6}}
+											</td>
+											<td>
+												{{i.7}}
+											</td>
+											<td class="media-middle">
+												<a href="content_edit/{{i.0}}"><button class="theme_button color1 rt-icon2-edit">Edit</button></a>	
+												</td>
+												<td>	
+												<a href="content_delete/{{i.0}}">	<button class="theme_button color2 rt-icon2-trashcan" onclick="delMsg();">Delete</button>	</a>
+													</td>
+													
+										</tr>
+										{% endfor %}
+										</table>
+								</div>
+								<!-- .table-responsive -->
+							</div>
+							<!-- .with_border -->
+						</div>
+						<!-- .col-* -->
+					</div>
+					<!-- .row -->
+					
+					</div>
+				<!-- .container -->
+			</section>
+
+			
+		</div>
+		<!-- eof #box_wrapper -->
+	</div>
+	<!-- eof #canvas -->
+
+
+	
+
+		<!-- template init -->
+<script src="{% static 'js/compressed.js' %}"></script>
+<script src="{% static 'js/main.js' %}"></script>
+<script type="text/javascript">
+	function delMsg() {
+		if (confirm("Are you sure about deleting record?")) {
+			alert('1 row deleted.');
+			return true;
+		}
+		else
+			return false;
+	}
+</script>
+
+
+<!-- dashboard libs -->
+
+<!-- events calendar -->
+<script src="{% static 'js/admin/moment.min.js' %}"></script>
+<script src="{% static 'js/admin/fullcalendar.min.js' %}"></script>
+<!-- range picker -->
+<script src="{% static 'js/admin/daterangepicker.js' %}"></script>
+
+<!-- charts -->
+<script src="{% static 'js/admin/Chart.bundle.min.js' %}"></script>
+<!-- vector map -->
+<script src="{% static 'js/admin/jquery-jvectormap-2.0.3.min.js' %}"></script>
+<script src="{% static 'js/admin/jquery-jvectormap-world-mill.js' %}"></script>
+<!-- small charts -->
+<script src="{% static 'js/admin/jquery.sparkline.min.js' %}"></script>
+
+<!-- dashboard init -->
+<script src="{% static 'js/admin.js' %}"></script>
+
+</body>
+
+
+<!-- Mirrored from html.modernwebtemplates.com/psychologist/admin_index.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 20 Dec 2021 17:10:47 GMT -->
+</html>
+
+
+

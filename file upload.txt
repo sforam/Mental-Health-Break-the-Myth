@@ -1,0 +1,91 @@
+The Basics of File Upload With Django
+
+
+
+When files are submitted to the server, the file data ends up placed in request.FILES.
+
+It is mandatory for the HTML form to have the attribute enctype="multipart/form-data" set correctly. Otherwise the request.FILES will be empty.
+
+The form must be submitted using the POST method.
+
+
+Django have proper model fields to handle uploaded files: FileField and ImageField.
+
+The files uploaded to FileField or ImageField are not stored in the database but in the filesystem.
+
+FileField and ImageField are created as a string field in the database (usually VARCHAR), containing the reference to the actual file.
+
+If you delete a model instance containing FileField or ImageField, Django will not delete the physical file, but only the reference to the file.
+
+The request.FILES is a dictionary-like object. Each key in request.FILES is the name from the <input type="file" name="" />.
+
+Each value in request.FILES is an UploadedFile instance.
+
+You will need to set MEDIA_URL and MEDIA_ROOT in your project’s settings.py.
+
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+
+
+
+Following is a minimal file upload example using FileSystemStorage. Use it just to learn about the flow of the process.
+
+
+from django.shortcuts import render
+from django.conf import settings
+from django.core.files.storage import FileSystemStorage
+
+def simple_upload(request):
+    if request.method == 'POST' and request.FILES['myfile']:
+        myfile = request.FILES['myfile']
+        fs = FileSystemStorage()
+        filename = fs.save(myfile.name, myfile)
+        uploaded_file_url = fs.url(filename)
+        return render(request, 'core/simple_upload.html', {
+            'uploaded_file_url': uploaded_file_url
+        })
+    return render(request, 'core/simple_upload.html')
+
+
+
+
+project url.py
+from django.conf import settings
+from django.conf.urls.static import static
+
+urlpatterns = [
+    # ... the rest of your URLconf goes here ...
+] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+
+
+
+ 
+
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media/')
+
+
+STATIC_URL = '/static/'
+
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, 'static'),
+]
+
+
+ <img src="/media/{{i.3}}" alt="">
+
+https://simpleisbetterthancomplex.com/tutorial/2016/08/01/how-to-upload-files-with-django.html
+
+
+
+Database :
+
+
+from django.core.files.storage import FileSystemStorage
+            myfile = request.FILES['txt2']            
+            fs = FileSystemStorage()
+            filepath = "static/myphotos/presc/"
+            filename = myfile.name
+            fileupload = fs.save(filepath+myfile.name, myfile)
+            uploaded_file_url = fs.url(fileupload)
+            print(uploaded_file_url)

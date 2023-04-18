@@ -1,0 +1,384 @@
+{% load static %}
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+
+<!-- Mirrored from html.modernwebtemplates.com/psychologist/header_side_sticked.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 20 Dec 2021 17:11:08 GMT -->
+<head>
+	<title>MentaL-Health Break The Myth</title>
+
+	<meta charset="utf-8">
+	<!--[if IE]>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<![endif]-->
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+	<link  rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+	<link  rel="stylesheet" href="{% static 'css/animations.css' %}">
+	<link    rel="stylesheet" href="{% static 'css/fonts.css' %}">
+	<link  rel="stylesheet" href="{% static 'css/main.css' %}" class="color-switcher-link">
+	<script src="{% static 'js/vendor/modernizr-2.6.2.min.js' %}"></script>
+	<!--[if lt IE 9]>
+
+	<!--[if lt IE 9]>
+		<script src="js/vendor/html5shiv.min.js"></script>
+		<script src="js/vendor/respond.min.js"></script>
+		<script src="js/vendor/jquery-1.12.4.min.js"></script>
+	<![endif]-->
+
+</head>
+
+<body>
+	<!--[if lt IE 9]>
+		<div class="bg-danger text-center">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/" class="highlight">upgrade your browser</a> to improve your experience.</div>
+	<![endif]-->
+
+	<div class="preloader">
+		<div class="preloader_image"></div>
+	</div>
+
+	<!-- search modal -->
+	<div class="modal" tabindex="-1" role="dialog" aria-labelledby="search_modal" id="search_modal">
+		<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			<span aria-hidden="true">
+				<i class="rt-icon2-cross2"></i>
+			</span>
+		</button>
+		<div class="widget widget_search">
+			<form method="get" class="searchform search-form form-inline" action="https://html.modernwebtemplates.com/psychologist/">
+				<div class="form-group">
+					<input type="text" value="" name="search" class="form-control" placeholder="Search keyword" id="modal-search-input">
+				</div>
+				<button type="submit" class="theme_button">Search</button>
+			</form>
+		</div>
+	</div>
+
+	<!-- Unyson messages modal -->
+	<div class="modal fade" tabindex="-1" role="dialog" id="messages_modal">
+		<div class="fw-messages-wrap ls with_padding">
+			<!-- Uncomment this UL with LI to show messages in modal popup to your user: -->
+			<!--
+		<ul class="list-unstyled">
+			<li>Message To User</li>
+		</ul>
+		-->
+
+		</div>
+	</div>
+	<!-- eof .modal -->
+	<div id="canvas">
+	<!-- wrappers for visual page editor and boxed version of template -->
+	
+		<div id="box_wrapper">
+
+			<!-- template sections -->
+
+			{% include 'doctor/sidebar.html' %}
+	
+			<section class="page_breadcrumbs ds background_cover section_padding_30">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-12 text-center">
+							<h2> Doctor's Registration </h2>
+							<ul class="menu-click">
+								<li><a href="doctor_register.html">Register</a></li>
+								-----------
+								<li><a href="doctor_login.html"> Login</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</section>
+            <section class="ls section_padding_top_100 section_padding_bottom_100">
+                <div class="container">
+            
+                    <div class="row">
+            
+						<form method="POST" action="/doctor/register/inserted"  id="myform" enctype="multipart/form-data">
+							{% csrf_token %}
+		
+                      
+            
+                            <div class="col-sm-7">
+                                <div class="form-group validate-required" id="billing_first_name_field">
+                                    <label for="billing_first_name" class="control-label">
+                                        <span class="grey">Name:</span>
+                                        <span class="required">*</span>
+                                    </label>
+            
+                                    <input type="text" class="form-control " name="nm" id="billing_first_name" placeholder="" value="" required>
+                                </div>
+                            </div>
+                            
+                          
+            
+                          
+                            <div class="col-sm-7">
+                                <div class="form-group validate-required validate-email" id="billing_email_field">
+                                    <label for="billing_email" class="control-label">
+                                        <span class="grey">Email Address:</span>
+                                        <span class="required">*</span>
+                                    </label>
+            
+                                    <input type="email" class="form-control " name="em" id="billing_email" placeholder="" value=""required>
+            
+                                </div>
+            
+                            </div>
+							<div class="col-sm-7">
+                                <div class="form-group validate-required" id="billing_phone_field">
+                                    <label for="billing_company" class="control-label">
+                                        <span class="grey">Contact no: </span>
+                                        <span class="required">*</span>
+                                    </label>
+            
+                                    <input type="number" class="form-control " maxlength="10" name="cn" id="billing_company" placeholder="" value="" required>
+            
+                                </div>
+                            </div>
+            
+                            
+                            <div class="col-sm-12">
+                               <div class="form-group" >
+                                Gender:
+                                
+                                <span class="required">*</span><div class="abc">  
+                                </div>
+                                   
+                                    <div class="radio">
+                                        <label>
+                                            
+                                 <input type="radio" class="form-control " name="user_gender" value="M" style="height:50px ; width: 20px;margin-top: -10px;"  > &nbsp;&nbsp;&nbsp; Male <br>
+                                <input type="radio" class="form-control " name="user_gender" value="F" style="height:50px ; width: 20px;margin-top: -10px;" >  &nbsp;&nbsp;&nbsp;   Female <br>
+                                            <input type="radio" class="form-control " name="user_gender" value="o" style="height:50px ; width: 20px;margin-top: -10px;"> &nbsp;&nbsp;&nbsp;  Others
+                                        </label>
+                                        </div>
+                                   
+                                    
+                                        
+                                </div> 
+                                
+                            </div>
+                            
+                                
+                            <div class="col-sm-7">
+                                <div class="form-group" id="billing_password_field">
+                                    <label for="billing_password" class="control-label">
+                                        <span class="grey">Password:(8 characters minimum)</span>
+                                        <span class="required">*</span>
+                                    </label>
+            
+                                    <input type="password" class="form-control " minlength="8" name="pwd" id="billing_password" placeholder="" value="" required>
+            
+                                </div>
+            
+                                <div class="form-group" id="billing_password2_field">
+                                    <label for="billing_password2" class="control-label">
+                                        <span class="grey">Confirm Password:</span>
+                                        <span class="required">*</span>
+                                    </label>
+            
+                                    <input type="password" class="form-control " minlength="8" name="confirm_pwd" id="billing_password2" placeholder="" value="" required>
+            
+                                </div>
+            
+                            </div>
+            
+                            <div class="col-sm-8">
+                                <label class="col-lg-6 control-label" for="user-profile-avatar">Upload CV:</label>
+                
+                                <input type="file" id="user-profile-avatar" required>
+                                <p class="help-block">Size < 5Mb </p> 
+								
+                            </div>
+
+                            <div class="col-sm-8">
+                                <label class="col-lg-6 control-label" for="user-profile-avatar">Upload Image:</label>
+                
+                                    <input type="file" id="user-profile-avatar" required>
+                                    <p class="help-block">Resolution < 300*300px </p> 
+
+
+            
+                            </div>
+
+							<div class="col-sm-12">
+
+								<button type="submit"  onclick="confirmMsg();" class="topmargin_40">Register Now</button>
+								<button type="reset" class="topmargin_40">Clear Form</button>
+			
+							</div>
+							
+						</form>
+            
+                          
+                     </div>
+                </div>
+            </section>
+      
+        
+               
+            
+			<section class="ls section_padding_100">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-12">
+							<div class="row">
+								<div class="col-sm-6">
+								</div>
+								<div class="col-sm-6">
+									</div>
+							</div>
+							<div class="row">
+								<div class="col-sm-4">
+									</div>
+								<div class="col-sm-4">
+									</div>
+								<div class="col-sm-4">
+								</div>
+								<div class="col-sm-4">
+								</div>
+							<div class="col-sm-4">
+								</div>
+							<div class="col-sm-4">
+							</div>
+							<div class="col-sm-4">
+							</div>
+						<div class="col-sm-4">
+							</div>
+						<div class="col-sm-4">
+						</div>
+						<div class="col-sm-4">
+						</div>
+					<div class="col-sm-4">
+						</div>
+					<div class="col-sm-4">
+					</div>
+					<div class="col-sm-4">
+					</div>
+				<div class="col-sm-4">
+					</div>
+				<div class="col-sm-4">
+				</div>
+				<div class="col-sm-4">
+				</div>
+			<div class="col-sm-4">
+				</div>
+			<div class="col-sm-4">
+			</div>
+			<div class="col-sm-4">
+			</div>
+			<div class="col-sm-4">
+			</div>
+			<div class="col-sm-4">
+			</div>
+			<div class="col-sm-4">
+			</div>
+			<div class="col-sm-4">
+			</div>
+				<div class="col-sm-4">
+			</div>
+			<div class="col-sm-4">
+			</div>
+			<div class="col-sm-4">
+			</div>
+			<div class="col-sm-4">
+			</div>
+			<div class="col-sm-4">
+			</div>
+			<div class="col-sm-4">
+			</div>
+			<div class="col-sm-4">
+			</div>
+			<div class="col-sm-4">
+			</div>
+			<div class="col-sm-4">
+			</div>
+			<div class="col-sm-4">
+			</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="cs main_color2 page_copyright section_padding_15">
+				<div class="container with_top_border">
+					<div class="row">
+						<div class="col-sm-12 text-center">
+							<p class="small-text">Mental Health-Break The Myth</p>
+						</div>
+					</div>
+				</div>
+			</section>
+		
+		
+			
+		</div>
+		<!-- eof #box_wrapper -->
+	</div>
+	<!-- eof #canvas -->
+
+	<script src="{% static 'js/compressed.js"></script>
+	<script src="{% static 'js/main.js"></script>
+	
+    <script type="text/javascript" src="{% static 'mytools/jquery-3.6.0.js"></script>
+    <script type="text/javascript" src="{% static 'mytools/validation/jquery.validate.js"/></script>
+    <style>
+        .error{
+            color:red;
+        }
+        
+    </style>
+    <!-- <script>
+        $(document).ready(function(){
+            $("#myform").validate();
+            
+        }); 
+    </script> -->
+    
+    <script>
+        $(function()
+      {
+        $('#myform').validate(
+          {
+            rules:
+            {
+                user_gender:{ required:true }
+            },
+            messages:
+            {
+                user_gender:
+              {
+                required:"Please select a gender<br>"
+              }
+            },
+            errorPlacement: function(error, element) 
+            {
+                if ( element.is(":radio") ) 
+                {
+                    error.insertAfter( ".abc" );
+                }
+                else 
+                { // This is the default behavior 
+                    error.insertAfter( element );
+                }
+             }
+          });
+        
+      });
+    </script> 
+</body>
+
+
+<!-- Mirrored from html.modernwebtemplates.com/psychologist/header_side_sticked.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 20 Dec 2021 17:11:08 GMT -->
+</html>

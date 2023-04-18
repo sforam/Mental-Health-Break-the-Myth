@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+
+<!-- Mirrored from html.modernwebtemplates.com/psychologist/shop-checkout-right.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 20 Dec 2021 17:11:40 GMT -->
+<head>
+	<title>MentaL-Health Break The Myth</title>
+	<meta charset="utf-8">
+	<!--[if IE]>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<![endif]-->
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/animations.css">
+	<link rel="stylesheet" href="css/fonts.css">
+	<link rel="stylesheet" href="css/main.css" class="color-switcher-link">
+	<link rel="stylesheet" href="css/shop.css" class="color-switcher-link">
+	<script src="js/vendor/modernizr-2.6.2.min.js"></script>
+
+	<!--[if lt IE 9]>
+		<script src="js/vendor/html5shiv.min.js"></script>
+		<script src="js/vendor/respond.min.js"></script>
+		<script src="js/vendor/jquery-1.12.4.min.js"></script>
+	<![endif]-->
+
+</head>
+
+<body>
+	<!--[if lt IE 9]>
+		<div class="bg-danger text-center">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/" class="highlight">upgrade your browser</a> to improve your experience.</div>
+	<![endif]-->
+
+	<div class="preloader">
+		<div class="preloader_image"></div>
+	</div>
+
+	<!-- search modal -->
+	<div class="modal" tabindex="-1" role="dialog" aria-labelledby="search_modal" id="search_modal">
+		<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			<span aria-hidden="true">
+				<i class="rt-icon2-cross2"></i>
+			</span>
+		</button>
+		<div class="widget widget_search">
+			<form method="get" class="searchform search-form form-inline" action="https://html.modernwebtemplates.com/psychologist/">
+				<div class="form-group">
+					<input type="text" value="" name="search" class="form-control" placeholder="Search keyword" id="modal-search-input">
+				</div>
+				<button type="submit" class="theme_button">Search</button>
+			</form>
+		</div>
+	</div>
+
+	<!-- Unyson messages modal -->
+	<div class="modal fade" tabindex="-1" role="dialog" id="messages_modal">
+		<div class="fw-messages-wrap ls with_padding">
+			<!-- Uncomment this UL with LI to show messages in modal popup to your user: -->
+			<!--
+		<ul class="list-unstyled">
+			<li>Message To User</li>
+		</ul>
+		-->
+
+		</div>
+	</div>
+	<!-- eof .modal -->
+
+	<!-- wrappers for visual page editor and boxed version of template -->
+	<div id="canvas">
+		<div id="box_wrapper">
+
+			{% include 'user/sidebaruserpanel.html' %}    
+			<section class="page_breadcrumbs ds background_cover section_padding_50">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-12 text-center">
+							<h2> Doctor's Booking</h2>
+							<ol class="breadcrumb divided_content wide_divider">
+								<li>
+									<a href="index.html">
+										Home
+									</a>
+								</li>
+								<li>
+									<a href="doctor1.html">Doctor</a>
+								</li>
+								<li class="active"> Paid Session Booking</li>
+							</ol>
+						</div>
+					</div>
+				</div>
+			</section>
+
+
+			<section class="ls section_padding_top_100 section_padding_bottom_75 columns_padding_25">
+				<div class="container">
+
+					<div class="row">
+
+						<div class="col-sm-7 col-md-8 col-lg-8">
+
+							<h2>Online Session Booking Details </h2>
+							<form method="POST" action="/user/book_doctor_nitinaaddprocess"  id="myform" enctype="multipart/form-data">
+								{% csrf_token %}
+						
+
+							<form class="form-horizontal checkout shop-checkout" role="form">
+								<div class="form-group">
+									<label for="billing_country" class="col-sm-3 control-label">
+										<span class="grey"> Doctor</span>
+										<span class="required">*</span>
+									</label>
+									<div class="col-sm-9">
+										<input type="text" class="form-control " name="billing_first_name" id="billing_first_name" placeholder="" value="{{doctors.2}}">
+									
+									</div>
+								</div>
+								<div class="form-group validate-required" id="billing_first_name_field">
+									<label for="billing_first_name" class="col-sm-3 control-label">
+										<span class="grey"> Your prefernce Booking  Date and Time </span>
+										<span class="required">*</span>
+									</label>
+									<div class="col-sm-9">
+										<br>
+										<br>
+										<br>
+										<input type="text" class="form-control " placeholder="Enter date and Time properly"  id="billing_first_name" placeholder="" name="dt" required>
+									</div>
+								</div>
+							
+								<div class="form-group validate-required" id="billing_last_name_field">
+									<label for="billing_last_name" class="col-sm-3 control-label">
+										
+									</label>
+									<div class="col-sm-9">
+										Note: Choose Monday To Friday  and Timimg 11:00 A.M- 
+										18:00 P.M Only.</div>
+								</div>
+
+								<div class="form-group">
+									<label for="order_comments" class="col-sm-7">
+										
+										<span class="grey">Briefly explain why are you seeking counselling:</span>
+									</label>
+									<div class="col-sm-5">
+										<textarea name="cq" class="form-control" id="order_comments" placeholder="" rows="5"></textarea>
+									</div>
+								</div>
+								<div class="form-group address-field validate-required" id="billing_city_field">
+									<label for="billing_city" class="col-sm-3 control-label">
+										<span class="grey">Mode:</span>
+										<br>
+										
+									</label>
+									<div class="col-sm-9">
+										
+										Doctor's session will be a video  call.<br>Note :You should join the meet  according to your preffered date and time chosen.</div>
+								</div>
+								<div class="form-group address-field validate-state" id="billing_state_field">
+									<label for="billing_state" class="col-sm-3 control-label">
+										<span class="grey"> Mobile Number:</span>
+										<span class="required">*</span>
+									</label>
+
+									<div class="col-sm-9">
+										<input type="number" class="form-control " value="" placeholder="" name="mobnum" id="billing_state">
+									</div>
+                                     <div class="col-sm-11">
+												&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<p> Note:The link for joining the meet will be messaged into this number.</p>
+											</div>
+								</div>
+								<div class="form-group address-field validate-required validate-postcode" id="billing_postcode_field">
+									<label for="billing_postcode" class="col-sm-3 control-label">
+										&nbsp;&nbsp;<span class="grey">Amount to be paid:<i style="color:red;">*</i></span>
+										<span class="required"></span>
+									</label>
+									<div class="col-sm-9">
+										<br>
+										<input type="number"  value="1200" class="form-control " name="amount" id="billing_postcode" placeholder="" value="{{doctors.10}}">
+									</div>
+								</div>
+
+							</form>
+
+						</div>
+						<!--eof .col-sm-8 (main content)-->
+
+
+						<!-- sidebar -->
+						<aside class="col-sm-5 col-md-4 col-lg-4">
+
+							
+								<div id="payment" class="shop-checkout-payment">
+									<h3 class="widget-title">Payment</h3>
+									<ul class="list1 no-bullets payment_methods methods">
+										<li class="payment_method_bacs">
+											<div class="radio">
+												<label for="payment_method_bacs">
+													<input id="payment_method_bacs" type="radio" name="pm" value="Phone pe" checked="checked">
+													<span class="grey">Phone Pe</span>
+												</label>
+											</div>
+
+											<div class="payment_box payment_method_bacs">
+												<p>Please do the payment on ph: 9910034387 .... a/c: Nishank Patel . Your Session won’t be confirmed until the funds have cleared in our account.</p>
+											</div>
+										</li>
+										<li class="payment_method_cheque">
+
+											<div class="radio">
+												<label for="payment_method_cheque">
+													<input id="payment_method_cheque" type="radio" name="pm" value="Google Pay">
+													<span class="grey">Google Pay</span>
+												</label>
+											</div>
+											<div class="payment_box payment_method_bacs">
+												<p>Please do the payment on ph: 9910034387 .... a/c: Nishank Patel . Your Session won’t be confirmed until the funds have cleared in our account.</p>
+											</div>
+										</li>
+										<li class="payment_method_paypal">
+
+											<div class="radio">
+												<label for="payment_method_paypal">
+													<input id="payment_method_paypal" type="radio" name="pm" value="paytm">
+													<span class="grey">Paytm</span>
+
+												</label>
+											</div>
+											<div class="payment_box payment_method_bacs">
+												<p>Please do the payment on ph: 9910034387 .... a/c: Nishank Patel . Your Session won’t be confirmed until the funds have cleared in our account.</p>
+											</div>
+										</li>
+									</ul>
+
+									<div class="place-order">
+										<input type="submit"  class="theme_button color1" name="checkout_place_order" id="place_order" value="Pay &#8377; 1200">
+								</div>
+							</form>
+							</div>
+
+						</aside>
+						<!-- eof aside sidebar -->
+
+
+					</div>
+				</div>
+			</section>
+
+			
+            <section class="cs main_color2 page_copyright section_padding_15">
+				<div class="container with_top_border">
+					<div class="row">
+						<div class="col-sm-12 text-center">
+							<p class="small-text">Mental Health-Break The Myth</p>
+						</div>
+					</div>
+				</div>
+			</section>
+
+		</div>
+		<!-- eof #box_wrapper -->
+	</div>
+	<!-- eof #canvas -->
+
+	<script src="js/compressed.js"></script>
+	<script src="js/main.js"></script>
+	
+
+</body>
+
+
+<!-- Mirrored from html.modernwebtemplates.com/psychologist/shop-checkout-right.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 20 Dec 2021 17:11:40 GMT -->
+</html>

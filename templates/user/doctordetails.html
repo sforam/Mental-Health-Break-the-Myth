@@ -1,0 +1,386 @@
+{% load static %}
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+
+<!-- Mirrored from html.modernwebtemplates.com/psychologist/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 20 Dec 2021 17:09:08 GMT -->
+<head>
+	<title>MentaL-Health Break The Myth</title>
+	<meta charset="utf-8">
+	<!--[if IE]>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<![endif]-->
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+	<link  rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+	<link  rel="stylesheet" href="{% static 'css/animations.css' %}">
+	<link    rel="stylesheet" href="{% static 'css/fonts.css' %}">
+	<link  rel="stylesheet" href="{% static 'css/main.css' %}" class="color-switcher-link">
+	<script src="{% static 'js/vendor/modernizr-2.6.2.min.js' %}"></script>
+
+	<!--[if lt IE 9]>
+		<script src="js/vendor/html5shiv.min.js"></script>
+		<script src="js/vendor/respond.min.js"></script>
+		<script src="js/vendor/jquery-1.12.4.min.js"></script>
+	<![endif]-->
+	
+</head>
+
+<body>
+	<!--[if lt IE 9]>
+		<div class="bg-danger text-center">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/" class="highlight">upgrade your browser</a> to improve your experience.</div>
+	<![endif]-->
+
+	<div class="preloader">
+		<div class="preloader_image"></div>
+	</div>
+
+	<!-- search modal -->
+
+	
+	<div class="modal" tabindex="-1" role="dialog" aria-labelledby="search_modal" id="search_modal">
+		<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			<span aria-hidden="true">
+				<i class="rt-icon2-cross2"></i>
+			</span>
+		</button>
+		<div class="widget widget_search">
+			<form method="get" class="searchform search-form form-inline" action="https://html.modernwebtemplates.com/psychologist/">
+				<div class="form-group">
+					<input type="text" value="" name="search" class="form-control" placeholder="Search keyword" id="modal-search-input">
+				</div>
+				<button type="submit" class="theme_button">Search</button>
+			</form>
+		</div>
+	</div>
+
+	<!-- Unyson messages modal -->
+	<div class="modal fade" tabindex="-1" role="dialog" id="messages_modal">
+		<div class="fw-messages-wrap ls with_padding">
+			<!-- Uncomment this UL with LI to show messages in modal popup to your user: -->
+			<!--
+		<ul class="list-unstyled">
+			<li>Message To User</li>
+		</ul>
+		-->
+
+		</div>
+	</div>
+	<!-- eof .modal -->
+
+	<!-- wrappers for visual page editor and boxed version of template -->
+	<div id="canvas">
+		<div id="box_wrapper">
+
+			{% include 'user/sidebaruserpanel.html' %}
+			<section class="page_breadcrumbs ds background_cover section_padding_50">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-12 text-center">
+							<h2>Doctor</h2>
+							<ol class="breadcrumb divided_content wide_divider">
+								<li>
+									<a href="index.html">
+										Home
+									</a>
+								</li>
+								<li>
+									<a href="#">Doctor</a>
+								</li>
+								<li class="active">Dr. Nitish Bose</li>
+							</ol>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="ls section_padding_top_130 section_padding_bottom_130 columns_padding_25">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-5">
+							<div class="vertical-item content-padding with_shadow text-center">
+								<div class="item-media">
+									<img src="{% static 'images/doctor/DrNitish.png'%}" >
+								</div>
+								<div class="item-content">
+									<h4 class="bottommargin_5">
+										<a href="nitish"><u>{{data.2}}</u></a> 
+										<br>
+									</h4><br>
+									<a href="book1.html">
+										<div class="book-button">BOOK</div> </a>                   
+								   
+										</div>
+							</div>
+						</div>
+						<div class="col-md-6">
+                            		
+						
+							<!-- Nav tabs -->
+							<ul class="nav nav-tabs topmargin_40" role="tablist">
+								<li class="active">
+									<a href="#tab1" role="tab" data-toggle="tab">Biography</a>
+								</li>
+
+							</ul>
+
+							<!-- Tab panes -->
+							<div class="tab-content top-color-border bottommargin_40">
+
+								<div class="tab-pane fade in active" id="tab1">
+									<h3 class="topmargin_0">{{data.2}} 
+									<div style="font-size:medium; color: black;">	M.B.B.S, DPB</div> </h3>
+									<p>
+                                        I developed a keen interest in human behaviour while pursuing my medical internship. I became aware of the pain that people with emotional difficulties face in their day to day life, and decided to join psychiatry to make a difference in people's lives. I’m aware of how difficult it can be to live wi. <span id="dots">...</span><span id="more">ith mental health concerns. The health and well-being of my clients is my top-most priority. My aim is to ensure that my clients are completely involved in the process of creating a treatment plan for their concerns. By going on a collaborative journey with my clients, I hope to help them achieve their desired goals and find much-needed relief from all their emotional difficulties</span>
+                                        
+                                          
+                                    </p>
+									<button onclick="myFunction()" id="myBtn">Read more</button>
+									
+								</div>
+
+								
+
+							</div>
+                            
+                           
+                              
+							<p style="color: black; font-size: large;"><b>Dr. Nitish Bose offers therapy in:</b></p>
+							<div class="row columns_padding_0 columns_margin_0 fontsize_16">
+                               
+								<div class="col-md-3 col-sm-6 clear-lg clear-md clear-sm">
+									<div class="with_padding text-center teaser hover_shadow">
+										<img src="{% static 'images/Resources/Addiction.svg'%}" alt="" />
+										<h4>
+											<a href="Addictio.html">Addiction</a>
+										</h4>
+										
+									</div>
+								</div>
+                                <div class="col-md-3 col-sm-6">
+									<div class="with_padding text-center teaser hover_shadow">
+										<img src="{% static 'images/Resources/Anxity.svg'%}" alt="" />
+										<h4>
+											<a href="Anxiety.html">Anxiety</a>
+										</h4>
+										
+									</div>
+								</div>
+							
+								<div class="col-md-3 col-sm-6">
+									<div class="with_padding text-center teaser hover_shadow">
+										<img src="{% static 'images/Resources/SleepDisturbances.svg'%}" alt="" />
+										<h4>
+											<a href="Sleep Disturbances.html">Sleep Disorder</a>
+										</h4>
+										
+									</div>
+								</div>
+								<div class="col-md-3 col-sm-6 clear-sm">
+									<div class="with_padding text-center teaser hover_shadow">
+										<img src="{% static 'images/Resources/Mood.png'%}" alt="" />
+										<h4>
+											<a href="Mood Disorder.html">Mood Disorders</a>
+										</h4>
+										
+									</div>
+								</div>
+								<div class="col-md-3 col-sm-6">
+									<div class="with_padding text-center teaser hover_shadow">
+										<img src="{% static 'images/Resources/Eating Disorders.png'%}" alt="" />
+										<h4>
+											<a href="Eating Disorder.html">Eating Disorders</a>
+										</h4>
+									</div>
+								</div>
+							
+								
+							</div>
+							 <div class="form-control"></div>  
+                            <!-- eof .tab-content -->
+                             <div >
+                                <div>&nbsp;&nbsp;</div>
+                                   
+                                <i class="rt-icon2-star-outline" style="color: rgb(153, 181, 238); "></i> <i style="font-size:medium;" >Expert in Post COVID Distress, &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="{% static 'images/expert/experience-46497a08667944017bf038d03425d340.svg'%}"  alt="" />
+												8+ years exp <br>&nbsp;&nbsp;&nbsp;&nbsp;Personality Disorders,Geriatric<br>&nbsp;&nbsp;&nbsp;&nbsp; Concerns, Parenting </i>
+                                               
+                                             <div>&nbsp;&nbsp;</div>
+                                               
+                                             <img src="{% static 'images/expert/languages-299bf3fcba62a9c17e3a8fdbc8ef4dc0.svg'%}"  alt="" />Speaks English, Hindi, Marathi, Kannada, Telugu
+                                             <div>&nbsp;&nbsp;</div>
+                                             <i class="rt-icon2-time" style="color: rgb(153, 181, 238); "> </i><i style="font-size:medium;" > 28000+ hours in psychiatry </i>   
+                                             <div class="form-control"></div>  
+                                </div>
+                                <div>
+                                    
+                                    <div>&nbsp;&nbsp;</div>
+                                    <p style="color: black; font-size: large;"><b>Affiliations:</b></p>
+                                    
+                                    <i class=" rt-icon2-shopping-bag" style="color: rgb(153, 181, 238); "></i>MD Resident at NIMHANS from 2013-05-02 to 2016-04-30 <br>
+                                    <div>&nbsp;&nbsp;</div>
+                                            
+                                    <i class=" rt-icon2-shopping-bag" style="color: rgb(153, 181, 238); "></i>Senior Resident at NIMHANS from 2016-06-09 to 2019-06-09<br>
+                                    <div>&nbsp;&nbsp;</div>
+                                            
+                                    <i class=" rt-icon2-shopping-bag" style="color: rgb(153, 181, 238); "></i>Consultant Psychiatrist at Mental health-break the myth from 2021-06-21 to present <br>
+                                    <div>&nbsp;&nbsp;</div>
+                                   
+                                    <i class=" rt-icon2-shopping-bag" style="color: rgb(153, 181, 238); "></i>Consultant Psychiatrist at IPH from 2019-10-09 to present<br>
+                                    <div>&nbsp;&nbsp;</div>
+                                   
+                                    <i class=" rt-icon2-shopping-bag" style="color: rgb(153, 181, 238); "></i>Consultant Psychiatrist at Jupiter Hospital Thane from 2019-08-11 to 2021-03-18
+                                    
+                                    <div>&nbsp;&nbsp;</div>
+                                   
+                                    <div class="form-control"></div>
+                                    <div>&nbsp;&nbsp;</div>
+                                   
+                                    <p style="color: black; font-size: large;"><b>FAQs:</b></p>
+                                    
+						
+					<div class="container">
+	
+						<div class="row">
+							<div class="row columns_padding_0 columns_margin_0 fontsize_16">
+								<div class="panel-group" id="accordion1">
+									<div class="panel panel-default">
+										<div class="panel-heading">
+											<h4 class="panel-title">
+												<a data-toggle="collapse" data-parent="#accordion1" href="#collapse1" class="collapsed">
+													Why did you choose to become a psychiatrist?
+												</a>
+											</h4>
+										</div>
+										<div id="collapse1" class="panel-collapse collapse">
+											<div class="panel-body">
+                                                I developed a keen interest in human behaviour while pursuing my medical internship. I became aware of the pain that people with emotional difficulties face in their day to day life, and decided to join psychiatry to make a difference in people's lives. I know how difficult it can be to live with mental health concerns. Hence, health and well-being of my clients is my top-most priority. My aim is to ensure that my clients are completely involved in the process of creating a treatment plan for their concerns. By going on a collaborative journey with my clients, I hope to help them achieve their desired goals and find much-needed relief from all their emotional difficulties.
+											</div>
+										</div>
+									</div>
+									<div class="panel panel-default">
+										<div class="panel-heading">
+											<h4 class="panel-title">
+												<a data-toggle="collapse" data-parent="#accordion1" href="#collapse2" class="collapsed">
+													What would you like to tell a client who comes to you for psychiatric support?
+												</a>
+											</h4>
+										</div>
+										<div id="collapse2" class="panel-collapse collapse">
+											<div class="panel-body">
+												Health and well-being of my clients is my top-most priority. I try to ensure that my clients are completely involved in the process of creating a treatment plan for their concerns. By going on a collaborative journey with my clients, I hope to help them achieve their desired goals and find much-needed relief from all their emotional difficulties.
+											</div>
+										</div>
+									</div>
+									<div class="panel panel-default">
+										<div class="panel-heading">
+											<h4 class="panel-title">
+												<a data-toggle="collapse" data-parent="#accordion1" href="#collapse3" class="collapsed">
+													What does a first session with you look like?
+												</a>
+											</h4>
+										</div>
+										<div id="collapse3" class="panel-collapse collapse">
+											<div class="panel-body">
+                                                The first session is all about getting to know the client, understanding their background and the concerns they have come with. I discuss my professional understanding of their concerns with them. I take time to discuss the available resources to alleviate their concerns and also explain the treatment plan to commence their journey of healing.
+What has been an important learning of being a psychiatrist?
+Over the period of my carrer as a psychiatrist and a doctor i have learned that, accomplishments in most aspects of life are dependent upon emotional and mental well-being. When we have emotional difficulties, they can lead us to perform poorly in all aspects of life. Professional help can be the solution we need to heal us emotionally, giving us happy lives that we all deserve.
+Can you share a quote that resonates with you?
+"Little drops of water, little grains of sand, make the mighty ocean, and the pleasant land."
+
+
+                                            </div>
+										</div>
+									</div>
+									<div class="panel panel-default">
+										<div class="panel-heading">
+											<h4 class="panel-title">
+												<a data-toggle="collapse" data-parent="#accordion1" href="#collapse4" class="collapsed">
+													What has been an important learning of being a psychiatrist?
+												</a>
+											</h4>
+										</div>
+										<div id="collapse4" class="panel-collapse collapse">
+											<div class="panel-body">
+                                                Over the period of my carrer as a psychiatrist and a doctor i have learned that, accomplishments in most aspects of life are dependent upon emotional and mental well-being. When we have emotional difficulties, they can lead us to perform poorly in all aspects of life. Professional help can be the solution we need to heal us emotionally, giving us happy lives that we all deserve.
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+	
+
+
+                                            
+                               
+                                </div>
+                               
+                       		</div>
+                        </div>
+					</div>
+				
+				</div>
+
+			</div>
+		</div>
+	</div>
+</div>
+
+
+			
+			</section>
+
+			<footer class="page_footer cs main_color2 table_section section_padding_50 columns_padding_0">
+                <section class="cs main_color2 page_copyright section_padding_15">
+                    <div class="container with_top_border">
+                        <div class="row">
+                            <div class="col-sm-12 text-center">
+                                <p class="small-text">These are difficult times and our team is here for you. If you are looking for any kind of mental health support - for yourself, your loved ones, or your workplace - don't hesitate to reach out to us.</p>
+                            
+								<p class="small-text">Mental Health-Break The Myth</p>
+                            </div>
+                        </div>
+                    </div>
+					
+                </section>
+				
+    
+			</footer>
+		<!-- eof #box_wrapper -->
+	</div>
+	<!-- eof #canvas -->
+
+	<script data-cfasync="false" src="{% static '../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js' %}"></script><script src="{% static 'js/compressed.js' %}"></script>
+	<script src="{% static 'js/main.js' %}" ></script>
+	
+
+</body>
+
+
+<!-- Mirrored from html.modernwebtemplates.com/psychologist/team-single.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 20 Dec 2021 17:11:49 GMT -->
+
+<script>
+	function myFunction() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("more");
+  var btnText = document.getElementById("myBtn");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more";
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less";
+    moreText.style.display = "inline";
+  }
+}
+	</script>
+</html>

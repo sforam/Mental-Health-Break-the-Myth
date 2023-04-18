@@ -1,0 +1,14 @@
+<svg id="Icon_-_Eye_toggle_on" data-name="Icon - Eye toggle on" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" viewBox="0 0 24 24">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_2472" data-name="Rectangle 2472" width="16" height="16" transform="translate(4 4)" fill="none" stroke="#182a88" stroke-width="1"/>
+    </clipPath>
+  </defs>
+  <rect id="Rectangle_2473" data-name="Rectangle 2473" width="24" height="24" fill="none"/>
+  <g id="Mask_Group_58664" data-name="Mask Group 58664" clip-path="url(#clip-path)">
+    <g id="eye" transform="translate(4 4)">
+      <path id="Path_388122" data-name="Path 388122" d="M.667,8S3.333,2.667,8,2.667,15.333,8,15.333,8,12.667,13.333,8,13.333.667,8,.667,8Z" fill="none" stroke="#182a88" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.333"/>
+      <circle id="Ellipse_4984" data-name="Ellipse 4984" cx="2" cy="2" r="2" transform="translate(6 6)" fill="none" stroke="#182a88" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.333"/>
+    </g>
+  </g>
+</svg>

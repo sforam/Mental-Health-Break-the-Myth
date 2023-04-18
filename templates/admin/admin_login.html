@@ -1,0 +1,194 @@
+{% load static %}
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+
+<!-- Mirrored from html.modernwebtemplates.com/psychologist/admin_signin.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 20 Dec 2021 17:11:58 GMT -->
+<head>
+	<title>MentaL-Health Break The Myth</title>
+	<meta charset="utf-8">
+	<!--[if IE]>f
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<![endif]-->
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+
+	<link  rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+	<link  rel="stylesheet" href="{% static 'css/animations.css' %}">
+	<link    rel="stylesheet" href="{% static 'css/fonts.css' %}">
+	<link  rel="stylesheet" href="{% static 'css/main.css' %}" class="color-switcher-link">
+	<script src="{% static 'js/vendor/modernizr-2.6.2.min.js' %}"></script>
+	<link rel="stylesheet" href="{% static 'css/dashboard.css' %}" class="color-switcher-link">
+
+
+	<!--[if lt IE 9]>
+		<script src="js/vendor/html5shiv.min.js"></script>
+		<script src="js/vendor/respond.min.js"></script>
+		<script src="js/vendor/jquery-1.12.4.min.js"></script>
+	<![endif]-->
+
+</head>
+
+<body class="admin">
+	<!--[if lt IE 9]>
+		<div class="bg-danger text-center">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/" class="highlight">upgrade your browser</a> to improve your experience.</div>
+	<![endif]-->
+
+	
+	<!-- search modal -->
+	
+	<!-- Unyson messages modal -->
+	
+	<!-- eof .modal -->
+
+	<!-- Unyson messages modal -->
+	<!-- eof .modal -->
+
+	<!-- wrappers for visual page editor and boxed version of template -->
+	<div id="canvas">
+		<div id="box_wrapper">
+
+			<!-- template sections -->
+			<section class="ls section_padding_top_100 section_padding_bottom_100 section_full_height">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-4 to_animate">
+							<div class="with_border with_padding">
+
+								<h4 class="text-center">
+									Log In </h4>
+								<hr class="bottommargin_30">
+								<div class="wrap-forms">
+									{% if messages %}
+										{% for msg in messages %}       
+											<div class="alert alert-{{msg.level_tag}}" role="alert">
+											{{msg.message}}
+											</div>
+									 {% endfor %}
+									{% endif %}
+									<form method="POST" action="/admin1/login" role="form" id="myform" >
+										{% csrf_token %}
+										
+										
+										<div class="row">
+											<div class="col-sm-12">
+												<div class="form-group validate-required validate-email" id="billing_email_field">
+													<label for="billing_email" class="control-label">
+														<span class="grey">Email Address:</span>
+														<span class="required">*</span>
+													</label>
+							
+													<input type="email" class="form-control" name="e1"  placeholder="" value="" required \>
+							
+												</div>
+							
+												
+											</div>
+										</div>
+										<div class="row">
+											<div class="col-sm-12">
+												<div class="form-group" id="billing_password_field">
+													<label for="billing_password" class="control-label">
+														<span class="grey">Password:</span>
+														<span class="required">*</span>
+													</label>
+							
+													<input type="password" class="form-control "  name="password"  id="billing_password" placeholder=""  minlength="8" maxlength="16" value="" required \>
+							
+												</div>
+											</div>
+										</div>
+										<div class="row">
+											<div class="col-sm-12">
+												<div class="checkbox">
+													<input type="checkbox" id="remember_me_checkbox">
+													<label for="remember_me_checkbox">Rememrber Me
+													</label>
+												</div>
+											</div>
+										</div>
+										
+										<button type="submit" class="theme_button block_button color1" onclick="confirmMsg();">Log in</button>
+
+										<br>
+										<a href="Forgot_password.html"> Forgot Your Password?  </a>
+								</form>
+								</div>
+
+								
+								
+
+
+							</div>
+							<!-- .with_border -->
+
+							<p class="divider_20 text-center">
+								
+							</p>
+
+						</div>
+						<!-- .col-* -->
+					</div>
+					<!-- .row -->
+				</div>
+				<!-- .container -->
+			</section>
+		</div>
+		<!-- eof #box_wrapper -->
+	</div>
+	<!-- eof #canvas -->
+
+
+	<!-- chat -->
+	<!-- .chat-dropdown -->
+
+	<script type="text/javascript">
+		function confirmMsg() {
+			if (alert("You have successfully logged In ")) {
+				
+				return true;
+			}
+			else
+				return false;
+		}
+	</script>
+	
+		<!-- template init -->
+<script src="{% static 'js/compressed.js' %}"></script>
+<script src="{% static 'js/main.js' %}"></script>
+
+<!-- dashboard libs -->
+
+<!-- events calendar -->
+<script src="{% static 'js/admin/moment.min.js' %}"></script>
+<script src="{% static 'js/admin/fullcalendar.min.js' %}"></script>
+<!-- range picker -->
+<script src="{% static 'js/admin/daterangepicker.js' %}"></script>
+
+<!-- charts -->
+<script src="{% static 'js/admin/Chart.bundle.min.js' %}"></script>
+<!-- vector map -->
+<script src="{% static 'js/admin/jquery-jvectormap-2.0.3.min.js' %}"></script>
+<script src="{% static 'js/admin/jquery-jvectormap-world-mill.js' %}"></script>
+<!-- small charts -->
+<script src="{% static 'js/admin/jquery.sparkline.min.js' %}"></script>
+
+<!-- dashboard init -->
+<script src="{% static 'js/admin.js' %}"></script>
+
+</body>
+
+
+<!-- Mirrored from html.modernwebtemplates.com/psychologist/admin_index.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 20 Dec 2021 17:10:47 GMT -->
+</html>
+
+
+

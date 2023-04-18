@@ -1,0 +1,405 @@
+{% load static %}
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+
+<!-- Mirrored from html.modernwebtemplates.com/psychologist/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 20 Dec 2021 17:09:08 GMT -->
+<head>
+	<title>MentaL-Health Break The Myth</title>
+	<meta charset="utf-8">
+	<!--[if IE]>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<![endif]-->
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+
+	<link  rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+	<link  rel="stylesheet" href="{% static 'css/animations.css' %}">
+	<link    rel="stylesheet" href="{% static 'css/fonts.css' %}">
+	<link  rel="stylesheet" href="{% static 'css/main.css' %}" class="color-switcher-link">
+	<script src="{% static 'js/vendor/modernizr-2.6.2.min.js' %}"></script>
+
+	<!--[if lt IE 9]>
+		<script src="js/vendor/html5shiv.min.js"></script>
+		<script src="js/vendor/respond.min.js"></script>
+		<script src="js/vendor/jquery-1.12.4.min.js"></script>
+	<![endif]-->
+	
+</head>
+
+<body>
+	<!--[if lt IE 9]>
+		<div class="bg-danger text-center">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/" class="highlight">upgrade your browser</a> to improve your experience.</div>
+	<![endif]-->
+
+	<div class="preloader">
+		<div class="preloader_image"></div>
+	</div>
+
+	<!-- search modal
+
+	
+	<div class="modal" tabindex="-1" role="dialog" aria-labelledby="search_modal" id="search_modal">
+		<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			<span aria-hidden="true">
+				<i class="rt-icon2-cross2"></i>
+			</span>
+		</button>
+		<div class="widget widget_search">
+			<form method="get" class="searchform search-form form-inline" action="https://html.modernwebtemplates.com/psychologist/">
+				<div class="form-group">
+					<input type="text" value="" name="search" class="form-control" placeholder="Search keyword" id="modal-search-input">
+				</div>
+				<button type="submit" class="theme_button">Search</button>
+			</form>
+		</div>
+	</div>  -->
+
+	<!-- Unyson messages modal -->
+	<div class="modal fade" tabindex="-1" role="dialog" id="messages_modal">
+		<div class="fw-messages-wrap ls with_padding">
+			<!-- Uncomment this UL with LI to show messages in modal popup to your user: -->
+			<!--
+		<ul class="list-unstyled">
+			<li>Message To User</li>
+		</ul>
+		-->
+
+		</div>
+	</div>
+	<!-- eof .modal -->
+
+	<!-- wrappers for visual page editor and boxed version of template -->
+	<div id="canvas">
+		<div id="box_wrapper">
+
+			<!-- template sections -->
+
+			{% include 'user/sidebaruserpanel.html' %}
+			<section class="intro_section page_mainslider ds">
+				<div class="flexslider">
+					<ul class="slides">
+
+						<li>
+							<img src="{% static 'images/Depressed people counseling with psychologist.jpg' %}" alt="">
+							<div class="container">
+								<div class="row">
+									<div class="col-sm-4 text-center">
+										<div class="slide_description_wrapper">
+											<div class="slide_description">
+												<div class="intro-layer" data-animation="fadeInRight">
+													<h3>
+														Be Your Best Version
+													</h3>
+												</div>
+												<div class="intro-layer" data-animation="fadeInLeft">
+													<p class="small-text grey">
+														It's Okay Not To Be Okay!
+													</p>
+												</div>
+											</div>
+											<!-- eof .slide_description -->
+										</div>
+										<!-- eof .slide_description_wrapper -->
+									</div>
+									<!-- eof .col-* -->
+								</div>
+								<!-- eof .row -->
+							</div>
+							<!-- eof .container -->
+						</li>
+
+					
+					</ul>
+				</div>
+				<!-- eof flexslider -->
+			</section>
+
+			<section id="services" class="ls section_padding_top_130 section_padding_bottom_100">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-12 text-center">
+							<h2 class="section_header with_icon">Mental Health Resources</h2>
+							<p>
+								Mental Health-Break the Myth  has many digital resources to support your wellbeing and mental health. You can start by exploring the resources below.
+							</p>
+						</div>
+					</div>
+					<div class="row columns_padding_0 columns_margin_0 fontsize_16">
+						<div class="col-md-3 col-sm-6">
+							<div class="with_padding text-center teaser hover_shadow">
+								<img src="{% static 'images/Resources/Anxity.svg' %}" alt="" />
+								<h4>
+									<a href="Anxiety">Anxiety</a>
+								</h4>
+								<p><a class="fa fa-volume-up"></a>
+									Intense, excessive and persistent worry and fear about everyday situations. Fast heart rate, rapid breathing, sweating and feeling tired may occur.
+								</p>
+							</div>
+						</div>
+						<div class="col-md-3 col-sm-6">
+							<div class="with_padding text-center teaser hover_shadow">
+								<img src="{% static 'images/Resources/Stress.svg' %}" alt="" />
+								<h4>
+									<a href="Stress">Stress</a>
+								</h4>
+								<p><a class="fa fa-volume-up"></a>
+									Sress is the inability to decide what's important.</p>
+							</div>
+						</div>
+						<div class="col-md-3 col-sm-6 clear-sm">
+							<div class="with_padding text-center teaser hover_shadow">
+								<img src="{% static 'images/Resources/Grief.svg' %}" alt="" />
+								<h4>
+									<a href="Grief">Grief</a>
+								</h4>
+								<p><a class="fa fa-volume-up"></a>
+									It’s normal to feel sadness and grief after you experience loss. But that doesn’t make it easy.
+								</p>
+							</div>
+						</div>
+						<div class="col-md-3 col-sm-6">
+							<div class="with_padding text-center teaser hover_shadow">
+								<img src="{% static 'images/Resources/Depression.svg' %}" alt="" />
+								<h4>
+									<a href="Depression">Depression</a>
+								</h4>
+								<p><a class="fa fa-volume-up"></a>
+									Depression is a kind of constricted consciousness.</p>
+							</div>
+						</div>
+						<div class="col-md-3 col-sm-6 clear-lg clear-md clear-sm">
+							<div class="with_padding text-center teaser hover_shadow">
+								<img src="{% static 'images/Resources/Addiction.svg' %}" alt="" />
+								<h4>
+									<a href="Addiction">Addiction</a>
+								</h4>
+								<p><a class="fa fa-volume-up"></a>
+									An addiction is an urge to do something that is hard to control or stop.
+								</p>
+							</div>
+						</div>
+						<div class="col-md-3 col-sm-6">
+							<div class="with_padding text-center teaser hover_shadow">
+								<img src="{% static 'images/Resources/SleepDisturbances.svg' %}" alt="" />
+								<h4>
+									<a href="Sleep Disturbances">Sleep Disorder</a>
+								</h4>
+								<p><a class="fa fa-volume-up"></a>
+									A good laugh and a long sleep are the best cures in the doctor's book.
+								</p>
+							</div>
+						</div>
+						<div class="col-md-3 col-sm-6 clear-sm">
+							<div class="with_padding text-center teaser hover_shadow">
+								<img src="{% static 'images/Resources/Mood.png' %}" alt="" />
+								<h4>
+									<a href="MoodDisorder">Mood Disorders</a>
+								</h4>
+								<p><a class="fa fa-volume-up"></a>
+									Time wil pass:these moods will pass:and I will eventually be myself again</p>
+							</div>
+						</div>
+						<div class="col-md-3 col-sm-6">
+							<div class="with_padding text-center teaser hover_shadow">
+								<img src="{% static 'images/Resources/Eating Disorders.png' %}" alt="" />
+								<h4>
+									<a href="Eating Disorder">Eating Disorders</a>
+								</h4>
+								<p><a class="fa fa-volume-up"></a>
+									Nothing tastes as good as healthy feels.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section id="about" class="cs parallax darken_gradient page_about section_padding_top_75 columns_margin_bottom_30">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-6 col-md-push-6 text-center">
+							<h2 class="section_header">What is mental health?</h2>
+							<br>
+							<p class="bold fontsize_18">Mental health includes our emotional, psychological, and social well-being. It affects how we think, feel, and act. It also helps determine how we handle stress, relate to others, and make choices. Mental health is important at every stage of life, from childhood and adolescence through adulthood.</p>
+                <p class="bold fontsize_18">
+                    Living a good life doesn’t mean everything is perfect.<br>Living a good life simply means you feel content with where you are, who you are, and what you have. <br>Start a happy journey.
+                </p>
+							<div class="with_icon topmargin_60">
+								<h5 class="small-text text-uppercase inline-block">Mental Health-Break The Myth TEAM</h5>
+							</div>
+						</div>
+						<div class="col-md-6 col-md-pull-6 text-center bottommargin_0">
+							<img src="{% static 'images/person.png' %}" alt="" class="top-overlap" />
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="cs main_color2 parallax page_testimonials section_padding_75">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-10 col-md-offset-1">
+							<div class="owl-carousel testimonials-carousel top-dots" data-responsive-sm="1" data-responsive-md="1" data-responsive-lg="1" data-dots="true">
+								<blockquote>
+									“Your purpose is that little voice inside your head that whispers, “Yes, you can.” It’s what happens when your values and passions combine in a way that serves the world and greatest good. <b>And the thing about purpose is that fulfilling it guarantees your success.</b>”
+									<div class="item-meta">
+										<h5>Jay Shetty</h5>
+									</div>
+								</blockquote>
+								<blockquote>
+									“You don’t need more. You don’t need change. Your most abundant life is already here, right in front of you, waiting for you to notice.<br><b>Notice. Love. Give thanks. Repeat. This is your most grateful way of being.</b>”
+									<div class="item-meta">
+										<h5>Jay Shetty</h5>
+									</div>
+								</blockquote>
+								<blockquote>
+									“You are indescribable. You are infinite. You are you. A forever work in progress, a perfectly imperfect human, a miraculous soul worthy of all good, loving, beautiful things. <b>Never forget this.</b>”
+									<div class="item-meta">
+										<h5>Jay Shetty</h5>
+									</div>
+								</blockquote>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section id="faq" class="ls section_padding_top_130 section_padding_bottom_100">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-12 text-center">
+							<h2 class="section_header with_icon">You Should Know This!</h2>
+							<p>
+								There are some frequently asked questions you should know.
+							</p>
+						</div>
+					</div>
+					
+					<div style="text-align:center; display: flex;
+					justify-content: center;
+					align-items: center;"class="row">
+						<div  class="col-md-6">
+							<div   class="panel-group" id="accordion1">
+								<div  class="panel panel-default">
+									<div  class="panel-heading">
+										<h4 class="panel-title">
+											<a data-toggle="collapse" data-parent="#accordion1" href="#collapse1" class="collapsed">
+												How effective are digital resources?										</h4>
+									</div>
+									<div id="collapse1" class="panel-collapse collapse">
+										<div class="panel-body">
+											Digital mental health resources are particularly beneficial for people with or at risk of mild to moderate mental health difficulties, or people supporting someone with mental health issues.
+											Quality digital resources are convenient, accessible, and private. They can be used as standalone supports, or in combination with face to face therapies.</a>
+										</div>
+									</div>
+								</div>
+								<div class="panel panel-default">
+									<div class="panel-heading">
+										<h4 class="panel-title">
+											<a data-toggle="collapse" data-parent="#accordion1" href="#collapse2" class="collapsed">
+												Is it true that nearly 90% of people who attempt or commit suicide have had some form of mental illness?
+											</a>
+										</h4>
+									</div>
+									<div id="collapse2" class="panel-collapse collapse">
+										<div class="panel-body">
+											Yes, this statistic is cited by the National Institue of Mental Health on its website and is taken from: Conwell Y, Brent D.
+										</div>
+									</div>
+								</div>
+								<div class="panel panel-default">
+									<div class="panel-heading">
+										<h4 class="panel-title">
+											<a data-toggle="collapse" data-parent="#accordion1" href="#collapse3" class="collapsed">
+												Are there any ethnic/racial groups that more likely to have mental illnesses?
+											</a>
+										</h4>
+									</div>
+									<div id="collapse3" class="panel-collapse collapse">
+										<div class="panel-body">
+											The types of mental illness and the percentage of the population with each illness is the same across cultures. Cultures vary in how mental illness is stigmatized, beliefs about the cause of mental illness, and response to different treatments. Mental Health professionals from many different fields differ in their opinions on this and related questions. One argument is that people with lower economic and social status (not ethnicity) are possibly more likely to develop mental illness due to the barriers to advancement implicit in those groups' social stature.</div>
+									</div>
+								</div>
+
+								<div class="panel panel-default">
+									<div class="panel-heading">
+										<h4 class="panel-title">
+											<a data-toggle="collapse" data-parent="#accordion1" href="#collapse4" class="collapsed">
+												How does someone acquire a mental illness?
+											</a>
+										</h4>
+									</div>
+									<div id="collapse4" class="panel-collapse collapse">
+										<div  class="panel-body">
+											Scientists are still studying how people become mentally ill, so we do not know as much as we would like about how a person develops a mental disorder. There may be genetic causes or inherited vulnerabilities, prenatal care injuries or difficulties, exposure to toxins, or other unknown sources. Poverty, homelessness, overcrowding, stressful living conditions, frequent exposure to violence, abusive parents or severe marital or relationship problems can contribute to the development of a mental illness.
+										</div>
+									</div>
+									
+								</div>
+								<div  class="panel panel-default">
+									<div  class="panel-heading">
+										<h4 class="panel-title">
+											<a data-toggle="collapse" data-parent="#accordion1" href="#collapse5" class="collapsed">
+												How can I tell if someone has a mental health problem?</a>
+										</h4>
+									</div>
+									<div  id="collapse5" class="panel-collapse collapse">
+										<div  class="panel-body">
+											Common mental health problems such as depression and anxiety affect one in four people. But it’s still something that lots of people find hard to talk about, which can mean that many people keep their feelings about having a mental health problem a secret, even from close family and friends. You can’t always tell if someone has a mental illness – people might look as though they’re fine and doing well, when actually they’re silently struggling.
+											If someone has bipolar disorder, they may show significant mood swings, or appear more withdrawn if they are dealing with self-harm or negative thoughts, but everything is dependent on the individual and there is no one way to know whether someone is unwell.</div>
+									</div>
+								</div>
+								<div class="panel panel-default">
+									<div  class="panel-heading">
+										<h4 class="panel-title">
+											<a data-toggle="collapse" data-parent="#accordion1" href="#collapse6" class="collapsed">
+												Are drugs or therapy better for mental health conditions?</a>
+										</h4>
+									</div>
+									<div id="collapse6" class="panel-collapse collapse">
+										<div class="panel-body">
+											Different people will find that different treatments help to manage their mental health – whether this is medication, or alternatives such as talking therapies, exercise or a mixture.
+											While antidepressants can be effective for some, they are not the solution for everyone and are not generally recommended as a first-line treatment for mild to moderate depression. Anyone taking antidepressants should be made aware of the possible pros and cons for them, and they should have their treatment reviewed regularly.
+											Talking therapies such as cognitive behavioural therapy (CBT) and counselling are becoming more widely available as part of the Improving Access to Psychological Therapies programme. Giving people a choice of treatments is key, whether that’s drugs, talking therapies, or alternatives such as arts therapy or exercise.
+										</div>
+									</div>
+								</div>
+								
+								
+							</div>
+						</div>
+								</section>
+
+			<section class="cs main_color2 page_copyright section_padding_15">
+				<div class="container with_top_border">
+					<div class="row">
+						<div class="col-sm-12 text-center">
+							<p class="small-text">Mental Health-Break The Myth</p>
+						</div>
+					</div>
+				</div>
+			</section>
+
+		</div>
+		<!-- eof #box_wrapper -->
+	</div>
+	<!-- eof #canvas -->
+
+
+	<script data-cfasync="false" src="{% static '../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js' %}"></script><script src="{% static 'js/compressed.js' %}"></script>
+	<script src="{% static 'js/main.js' %}" ></script>
+
+	<!--	<script src="js/switcher.js"></script> -->
+
+</body>
+
+
+<!-- Mirrored from html.modernwebtemplates.com/psychologist/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 20 Dec 2021 17:09:49 GMT -->
+</html>

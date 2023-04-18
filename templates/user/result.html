@@ -1,0 +1,427 @@
+{% load static %}
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+
+<!-- Mirrored from html.modernwebtemplates.com/psychologist/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 20 Dec 2021 17:09:08 GMT -->
+<head>
+	<title>MentaL-Health Break The Myth</title>
+	<meta charset="utf-8">
+	<!--[if IE]>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<![endif]-->
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+	<link  rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+	<link  rel="stylesheet" href="{% static 'css/animations.css' %}">
+	<link    rel="stylesheet" href="{% static 'css/fonts.css' %}">
+	<link  rel="stylesheet" href="{% static 'css/main.css' %}" class="color-switcher-link">
+	<script src="{% static 'js/vendor/modernizr-2.6.2.min.js' %}"></script>
+
+
+	<!--[if lt IE 9]>
+		<script src="js/vendor/html5shiv.min.js"></script>
+		<script src="js/vendor/respond.min.js"></script>
+		<script src="js/vendor/jquery-1.12.4.min.js"></script>
+	<![endif]-->
+	
+</head>
+<body>
+	<!--[if lt IE 9]>
+		<div class="bg-danger text-center">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/" class="highlight">upgrade your browser</a> to improve your experience.</div>
+	<![endif]-->
+
+	<!--<div class="preloader">
+		<div class="preloader_image"></div>
+	</div> -->
+
+	<!-- search modal -->
+	<div class="modal" tabindex="-1" role="dialog" aria-labelledby="search_modal" id="search_modal">
+		<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			<span aria-hidden="true">
+				<i class="rt-icon2-cross2"></i>
+			</span>
+		</button>
+		<div class="widget widget_search">
+			<form method="get" class="searchform search-form form-inline" action="https://html.modernwebtemplates.com/psychologist/">
+				<div class="form-group">
+					<input type="text" value="" name="search" class="form-control" placeholder="Search keyword" id="modal-search-input">
+				</div>
+				<button type="submit" class="theme_button">Search</button>
+			</form>
+		</div>
+	</div>
+
+	<!-- Unyson messages modal -->
+	<div class="modal fade" tabindex="-1" role="dialog" id="messages_modal">
+		<div class="fw-messages-wrap ls with_padding">
+			<!-- Uncomment this UL with LI to show messages in modal popup to your user: -->
+			<!--
+		<ul class="list-unstyled">
+			<li>Message To User</li>
+		</ul>
+		-->
+
+		</div>
+	</div>
+	<!-- eof .modal -->
+
+	<!-- wrappers for visual page editor and boxed version of template -->
+	<div id="canvas">
+		<div id="box_wrapper">
+
+	{% include 'user/sidebaruserpanel.html' %}
+            <section class="page_breadcrumbs ds background_cover section_padding_50">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-12 text-center">
+                            <h2>Self-AssesmentTest Result</h2> 
+            
+                            <ol class="breadcrumb divided_content wide_divider">
+                                
+                                
+                                <li class="active">Result</li>
+                                
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+
+            <section class="ls section_padding_top_100 section_padding_bottom_100">
+                <div class="container">
+					<div class="col-sm-12">
+                        {% for i in data %}
+                        
+                        <h1> Your  Total Score is : {{i.0}}</h1>
+                       
+                        {% endfor %} 
+                       
+                        <br>
+                         
+                               
+                            
+                                
+                                <b> Interpret your Total Score :
+
+                                    <ul>
+                                        <li> 1-4: Minimal depression :
+                                           <div>
+                                            <h5>
+                                                Your results indicate that you have none, or very few symptoms of depression.
+                
+                                                If you notice that your symptoms aren’t improving, you may want to bring them up with someone you trust.
+                                            </h5>
+                                            <h5>
+                                                This screen is not meant to be a diagnosis. Diagnosis and care of mental health conditions can be difficult.  A trained medical or mental health professional can help clarify issues and diagnose depression.
+                
+                                                If you feel like your feelings, thoughts, or behaviors get worse, screen again. </h5>
+                
+                
+                
+                                           </div>
+                                        </li>
+                                        <li>5-9: Mild depression:
+                                            <div>
+                                                <h5>
+                                                    Your responses indicate that you may be at risk of harming yourself or someone else.
+
+Your results indicate that you may be experiencing some symptoms of mild depression. While your symptoms are not likely having a major impact on your life, it is important to monitor them.
+
+These results do not mean that you have depression, but it may be time to start a conversation with someone you trust. 
+
+                                                </h5>
+                                                <h5>
+                                                    This screen is not meant to be a diagnosis. Diagnosis and care of mental health conditions can be difficult. Having symptoms of depression is different than having depression. In addition, symptoms of depression can be caused by other mental health conditions, such as bipolar disorder, or other health problems, like a thyroid disorder. A trained professional, such as a doctor or a mental health provider, can make this determination and finding the right support can help you feel more like you again.
+
+The depression symptoms you are experiencing may also indicate a different type of mental health problem related to bipolar disorder.   People who struggle with bipolar disorder experience mood swings from extreme elation, energy, or agitation to low depressive symptoms.        
+
+                                                </h5>
+
+                                            </div>
+                                        </li>
+                                        <li>10-14: Moderate depression:
+                                            <div>
+                                                <h5>
+                                                    Your responses indicate that you may be at risk of harming yourself or someone else. 
+
+    Your results indicate that you may be experiencing symptoms of moderate depression. Based on your answers, living with these symptoms could be causing difficulty managing relationships and even the tasks of everyday life.
+
+These results do not mean that you have depression, but it may be time to start a conversation with someone you trust. 
+
+                                                </h5>
+                                                <h5>
+                                                    This screen is not meant to be a diagnosis. Diagnosis and care of mental health conditions can be difficult. Having symptoms of depression is different than having depression. In addition, symptoms of depression can be caused by other mental health conditions, such as bipolar disorder, or other health problems, like a thyroid disorder. A trained professional, such as a doctor or a mental health provider, can make this determination and finding the right support can help you feel more like you again.
+
+The depression symptoms you are experiencing may also indicate a different type of mental health problem related to bipolar disorder.   People who struggle with bipolar disorder experience mood swings from extreme elation, energy, or agitation to low depressive symptoms.        
+
+                                                </h5>
+
+                                            </div>
+                                        </li>
+                                        <li>15-19: Moderately severe depression:
+                                            <h5>
+                                                Your responses indicate that you may be at risk of harming yourself or someone else. 
+
+Your results indicate that you may be experiencing symptoms of Moderately Severe  depression. Based on your answers, living with these symptoms could be causing difficulty managing relationships and even the tasks of everyday life.
+
+These results do not mean that you have depression, but it may be time to start a conversation with someone you trust. 
+
+                                            </h5>
+                                            <h5>
+                                                This screen is not meant to be a diagnosis. Diagnosis and care of mental health conditions can be difficult. Having symptoms of depression is different than having depression. In addition, symptoms of depression can be caused by other mental health conditions, such as bipolar disorder, or other health problems, like a thyroid disorder. A trained professional, such as a doctor or a mental health provider, can make this determination and finding the right support can help you feel more like you again.
+
+The depression symptoms you are experiencing may also indicate a different type of mental health problem related to bipolar disorder.   People who struggle with bipolar disorder experience mood swings from extreme elation, energy, or agitation to low depressive symptoms.        
+
+                                            </h5>
+</li>
+                                        <li> 20-27: Severe depression:
+                                            <div>
+                                                <h5>
+                                                    Your responses indicate that you may be at risk of harming yourself or someone else. 
+    
+    Your results indicate that you may be experiencing symptoms of  Severe  depression. Based on your answers, these symptoms seem to be greatly interfering with your relationships and the tasks of everyday life.
+    
+    These results do not mean that you have depression, but it may be time to start a conversation with someone you trust. 
+    
+                                                </h5>
+                                                <h5>
+                                                    This screen is not meant to be a diagnosis. Diagnosis and care of mental health conditions can be difficult. Having symptoms of depression is different than having depression. In addition, symptoms of depression can be caused by other mental health conditions, such as bipolar disorder, or other health problems, like a thyroid disorder. A trained professional, such as a doctor or a mental health provider, can make this determination and finding the right support can help you feel more like you again.
+    
+    The depression symptoms you are experiencing may also indicate a different type of mental health problem related to bipolar disorder.   People who struggle with bipolar disorder experience mood swings from extreme elation, energy, or agitation to low depressive symptoms.        
+    
+                                                </h5>
+    
+                                            </div>
+                                        </li></b>
+                                    </ul>
+                                
+                            </div>
+						
+							<div class="row">
+								
+				                
+							
+							<article class="post side-item content-padding with_shadow">
+								<div class="row">
+                                
+
+
+                        </div>
+                        </article>
+                        </div>
+                        </div>
+                        </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <section class="cs main_color2 page_copyright section_padding_15">
+				<div class="container with_top_border">
+					<div class="row">
+						<div class="col-sm-12 text-center">
+							<p class="small-text">Mental Health-Break The Myth</p>
+						</div>
+					</div>
+				</div>
+			</section>
+
+		</div>
+		<!-- eof #box_wrapper -->
+	</div>
+	<!-- eof #canvas -->
+
+
+	
+<!--<script>
+	$(document).ready(function(){
+		$("#myform").validate();
+	});
+</script> -->
+<script>
+    
+    function formvalidate() { 
+        
+        
+       
+        
+        
+        
+      
+        var q1 = document.getElementsByName('q1');
+        var q1Value = false;
+
+        for(var i=0; i<q1.length;i++)
+        {
+            if(q1[i].checked == true)
+            {
+                q1Value = true;    
+            }
+        }
+        if(!q1Value)
+        {
+            alert("Please Select option for question1");
+            return false;
+        }
+
+        if (message.value == "") { 
+            window.alert("Please Enter Message"); 
+            message.focus(); 
+            return false; 
+        } 
+
+        if(!this.agree.checked)
+    {
+        alert('You must agree to the terms first.');
+        agree.focus(); 
+        return false;
+    }
+
+        
+        
+	var q2 = document.getElementsByName('q2');
+        var q2Value = false;
+
+        for(var i=0; i<q2.length;i++)
+        {
+            if(q2[i].checked == true)
+            {
+                q2Value = true;    
+            }
+        }
+        if(!q2Value)
+        {
+            alert("Please Select option for question2");
+            return false;
+        }
+
+        if (message.value == "") { 
+            window.alert("Please Enter Message"); 
+            message.focus(); 
+            return false; 
+        } 
+
+        if(!this.agree.checked)
+    {
+        alert('You must agree to the terms first.');
+        agree.focus(); 
+        return false;
+    }
+  
+
+    
+
+    
+    }
+
+    function Validate(no) {
+                   no.value = no.value.replace(/[^ 0-9\n\r]+/g, '');
+               }
+               
+               function Validatestring(no) {
+                   no.value = no.value.replace(/[^ a-z A-Z\n\r]+/g, '');
+                   var myuser_name = document.forms["myform"]["user_name"]; 
+                   user_name =myuser_name.value;
+                   if (user_name.length < 3)
+    {
+    alert("Name must be atleast 3 charactrs long, Please Try Again");
+    return false;
+    } 
+               }
+
+           
+
+
+
+
+
+function validateEmail(emailField){
+        var reg = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
+
+        if (reg.test(emailField.value) == false) 
+        {
+            alert('Invalid Email Address');
+            document.forms["myform"]["user_email"].focus();
+            return false;
+            
+        }
+
+        return true;
+
+}
+
+function phonenumber(inputtxt)
+{
+  var phoneno = /^\d{10}$/;
+  if((inputtxt.value.match(phoneno)))
+        {
+      return true;
+        }
+      else
+        {
+        alert("Please Enter Valid 10 Digit Mobile No");
+        document.forms["myform"]["user_mobile"].focus();
+        return false;
+        }
+}
+
+
+
+
+function checkPassword(form) { 
+    user_password = document.forms["myform"]["user_password"]; 
+    confirm_password    = document.forms["myform"]["confirm_password"]; 
+  
+                password1=user_password.value;
+                password2=confirm_password.value;
+                // If password not entered 
+                if (password1 == '') 
+                    alert ("Please enter Password"); 
+                      
+                // If confirm password not entered 
+                else if (password2 == '') 
+                    alert ("Please enter confirm password"); 
+                      
+                // If Not same return False.     
+                else if (password1 != password2) { 
+                    alert ("Password did not match: Please try again...") 
+                    return false; 
+                } 
+  
+                // If same return True. 
+                else{ 
+                    // alert("Password Match.") 
+                    return true; 
+                } 
+            } 
+
+    
+    </script>
+
+
+<!--	<script src="js/switcher.js"></script> -->
+
+</body>
+
+
+<!-- Mirrored from html.modernwebtemplates.com/psychologist/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 20 Dec 2021 17:09:49 GMT -->
+</html>
